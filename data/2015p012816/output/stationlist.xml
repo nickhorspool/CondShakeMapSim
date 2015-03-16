@@ -1,0 +1,4422 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE shakemap-data [
+<!ELEMENT shakemap-data (earthquake,stationlist)>
+<!ELEMENT stationlist (station+)>
+<!ATTLIST stationlist
+  created	CDATA	#REQUIRED
+>
+
+<!ELEMENT station (comp+)>
+<!ATTLIST station
+  code		CDATA 			#REQUIRED
+  name		CDATA 			#REQUIRED
+  insttype	CDATA 			#REQUIRED
+  lat		CDATA 			#REQUIRED
+  lon		CDATA 			#REQUIRED
+  source	(SCSN|CGS|NSMP) 	'SCSN'
+  netid		CDATA			#REQUIRED
+  commtype	(DIG|ANA) 		'DIG'
+  dist          CDATA                   '10.0'
+  loc		CDATA			''
+>
+
+<!ELEMENT comp (acc,vel,psa*)>
+<!ATTLIST comp
+  name          CDATA  #REQUIRED
+  originalname  CDATA  #IMPLIED
+>
+
+<!ELEMENT acc EMPTY>
+<!ELEMENT vel EMPTY>
+<!ELEMENT psa03 EMPTY>
+<!ELEMENT psa10 EMPTY>
+<!ELEMENT psa30 EMPTY>
+<!ATTLIST acc
+  value  CDATA         #REQUIRED
+  flag   CDATA        ''
+>
+<!ATTLIST vel
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa03
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa10
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa30
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ELEMENT  earthquake EMPTY>
+<!ATTLIST earthquake
+  id 		ID	#REQUIRED
+  lat		CDATA	#REQUIRED
+  lon		CDATA	#REQUIRED
+  mag		CDATA	#REQUIRED
+  year          CDATA   #REQUIRED
+  month         CDATA   #REQUIRED
+  day           CDATA   #REQUIRED
+  hour          CDATA   #REQUIRED
+  minute        CDATA   #REQUIRED
+  second        CDATA   #REQUIRED
+  timezone      CDATA   #REQUIRED
+  depth		CDATA	#REQUIRED
+  type		CDATA	#REQUIRED
+  locstring	CDATA	#REQUIRED
+  pga		CDATA   #REQUIRED
+  pgv		CDATA   #REQUIRED
+  sp03		CDATA   #REQUIRED
+  sp10		CDATA   #REQUIRED
+  sp30		CDATA   #REQUIRED
+  created	CDATA	#REQUIRED
+>
+]>
+<shakemap-data code_version="3.5" map_version="1">
+<earthquake id="20150105174842" lat="-43.06" lon="171.25" mag="5.6" year="2015" month="1" day="5" hour="17" minute="48" second="42" timezone="GMT" depth="5" network="" locstring="2015p012816 / -43.3169 / 171.59" created="1424388090" />
+<stationlist created="1424388090">
+<station code="ABAZ" name="ABAZ" insttype="LE-3DliteMkII" lat="-36.6002" lon="174.832" dist="778.971051" source="" netid="" commtype="" loc="" intensity="3.5">
+<comp name="EHE">
+<acc value="0.0069" flag="T" />
+<vel value="0.7541" flag="T" />
+<psa03 value="0.1994" flag="T" />
+<psa10 value="0.1631" flag="T" />
+<psa30 value="0.1418" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0064" flag="T" />
+<vel value="0.2569" flag="T" />
+<psa03 value="0.0683" flag="T" />
+<psa10 value="0.0558" flag="T" />
+<psa30 value="0.0488" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0033" flag="T" />
+<vel value="0.3396" flag="T" />
+<psa03 value="0.0893" flag="T" />
+<psa10 value="0.0732" flag="T" />
+<psa30 value="0.0634" flag="T" />
+</comp>
+</station>
+<station code="AKCZ" name="AKCZ" insttype="LE-3DliteMkII" lat="-43.8721" lon="172.91" dist="159.981752" source="" netid="" commtype="" loc="" intensity="4.5" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.2320" flag="0" />
+<vel value="2.9579" flag="T" />
+<psa03 value="0.7818" flag="0" />
+<psa10 value="0.6396" flag="0" />
+<psa30 value="0.5560" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.2031" flag="0" />
+<vel value="3.4582" flag="T" />
+<psa03 value="0.9143" flag="0" />
+<psa10 value="0.7479" flag="0" />
+<psa30 value="0.6504" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.1833" flag="0" />
+<vel value="1.8067" flag="T" />
+<psa03 value="0.4770" flag="0" />
+<psa10 value="0.3904" flag="0" />
+<psa30 value="0.3391" flag="T" />
+</comp>
+</station>
+<station code="AKSS" name="AKSS" insttype="FBA-ES-T-BASALT" lat="-43.8109" lon="172.963" dist="159.984782" source="" netid="" commtype="" loc="" intensity="2.5">
+<comp name="HN2">
+<acc value="0.1701" flag="0" />
+<vel value="0.1286" flag="0" />
+<psa03 value="0.2380" flag="0" />
+<psa10 value="0.1654" flag="0" />
+<psa30 value="0.0363" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.1045" flag="0" />
+<vel value="0.1276" flag="0" />
+<psa03 value="0.1624" flag="0" />
+<psa10 value="0.1492" flag="0" />
+<psa30 value="0.0390" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.1455" flag="0" />
+<vel value="0.1688" flag="0" />
+<psa03 value="0.4071" flag="0" />
+<psa10 value="0.2150" flag="0" />
+<psa30 value="0.0309" flag="0" />
+</comp>
+</station>
+<station code="ALRZ" name="ALRZ" insttype="L4C-3D" lat="-38.562" lon="176.343" dist="656.874638" source="" netid="" commtype="" loc="" intensity="1.5">
+<comp name="EHE">
+<acc value="0.0077" flag="T" />
+<vel value="0.0311" flag="T" />
+<psa03 value="0.0096" flag="T" />
+<psa10 value="0.0238" flag="0" />
+<psa30 value="0.0148" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0056" flag="T" />
+<vel value="0.0410" flag="T" />
+<psa03 value="0.0108" flag="T" />
+<psa10 value="0.0137" flag="0" />
+<psa30 value="0.0096" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0036" flag="T" />
+<vel value="0.0349" flag="T" />
+<psa03 value="0.0093" flag="T" />
+<psa10 value="0.0096" flag="0" />
+<psa30 value="0.0066" flag="0" />
+</comp>
+</station>
+<station code="AMCZ" name="AMCZ" insttype="LE-3Dlite" lat="-43.1765" lon="172.651" dist="112.906272" source="" netid="" commtype="" loc="" intensity="7.0" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.7366" flag="0" />
+<vel value="15.8599" flag="T" />
+<psa03 value="4.1903" flag="T" />
+<psa10 value="3.4285" flag="T" />
+<psa30 value="2.9806" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.9342" flag="0" />
+<vel value="21.0722" flag="T" />
+<psa03 value="5.5692" flag="T" />
+<psa10 value="4.5561" flag="T" />
+<psa30 value="3.9616" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.3427" flag="0" />
+<vel value="5.7759" flag="T" />
+<psa03 value="1.5267" flag="T" />
+<psa10 value="1.2489" flag="T" />
+<psa30 value="1.0861" flag="T" />
+</comp>
+</station>
+<station code="ANWZ" name="ANWZ" insttype="L4C-3D" lat="-40.4597" lon="176.475" dist="519.265606" source="" netid="" commtype="" loc="" intensity="2.0">
+<comp name="EHE">
+<acc value="0.0170" flag="T" />
+<vel value="0.0734" flag="T" />
+<psa03 value="0.0385" flag="T" />
+<psa10 value="0.0275" flag="0" />
+<psa30 value="0.0258" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0212" flag="T" />
+<vel value="0.0224" flag="T" />
+<psa03 value="0.0455" flag="T" />
+<psa10 value="0.0334" flag="0" />
+<psa30 value="0.0099" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0087" flag="T" />
+<vel value="0.0329" flag="T" />
+<psa03 value="0.0349" flag="T" />
+<psa10 value="0.0178" flag="0" />
+<psa30 value="0.0190" flag="0" />
+</comp>
+</station>
+<station code="APZ" name="APZ" insttype="CMG-3ESP" lat="-46.8318" lon="167.989" dist="490.028274" source="" netid="" commtype="" loc="" intensity="1.2">
+<comp name="HHE">
+<acc value="0.0097" flag="0" />
+<vel value="0.0306" flag="0" />
+<psa03 value="0.0128" flag="0" />
+<psa10 value="0.0171" flag="0" />
+<psa30 value="0.0120" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0054" flag="0" />
+<vel value="0.0226" flag="0" />
+<psa03 value="0.0066" flag="0" />
+<psa10 value="0.0124" flag="0" />
+<psa30 value="0.0173" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0068" flag="0" />
+<vel value="0.0223" flag="0" />
+<psa03 value="0.0105" flag="0" />
+<psa10 value="0.0150" flag="0" />
+<psa30 value="0.0230" flag="0" />
+</comp>
+</station>
+<station code="ARCZ" name="ARCZ" insttype="LE-3DliteMkII" lat="-43.947" lon="171.177" dist="97.285790" source="" netid="" commtype="" loc="" intensity="4.5">
+<comp name="EHE">
+<acc value="0.5274" flag="0" />
+<vel value="0.8826" flag="T" />
+<psa03 value="1.4210" flag="0" />
+<psa10 value="1.0937" flag="0" />
+<psa30 value="0.1807" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.6231" flag="0" />
+<vel value="3.6210" flag="T" />
+<psa03 value="1.2079" flag="0" />
+<psa10 value="1.0012" flag="0" />
+<psa30 value="0.6807" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.4344" flag="0" />
+<vel value="0.4768" flag="T" />
+<psa03 value="0.7257" flag="0" />
+<psa10 value="0.3646" flag="0" />
+<psa30 value="0.1031" flag="T" />
+</comp>
+</station>
+<station code="AWAZ" name="AWAZ" insttype="2" lat="-37.0638" lon="174.643" dist="724.877458" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="EH1">
+<acc value="0.0038" flag="T" />
+<vel value="0.0233" flag="T" />
+<psa03 value="0.0061" flag="T" />
+<psa10 value="0.0091" flag="0" />
+<psa30 value="0.0049" flag="0" />
+</comp>
+<comp name="EH2">
+<acc value="0.0013" flag="T" />
+<vel value="0.0042" flag="T" />
+<psa03 value="0.0040" flag="T" />
+<psa10 value="0.0034" flag="0" />
+<psa30 value="0.0050" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0037" flag="T" />
+<vel value="0.0986" flag="T" />
+<psa03 value="0.0259" flag="T" />
+<psa10 value="0.0213" flag="0" />
+<psa30 value="0.0184" flag="0" />
+</comp>
+</station>
+<station code="BFZ" name="BFZ" insttype="STS-2" lat="-40.6796" lon="176.246" dist="489.415922" source="" netid="" commtype="" loc="" intensity="1.1">
+<comp name="HHE">
+<acc value="0.0076" flag="0" />
+<vel value="0.0234" flag="0" />
+<psa03 value="0.0143" flag="0" />
+<psa10 value="0.0199" flag="0" />
+<psa30 value="0.0127" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0046" flag="0" />
+<vel value="0.0168" flag="0" />
+<psa03 value="0.0062" flag="0" />
+<psa10 value="0.0138" flag="0" />
+<psa30 value="0.0122" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0081" flag="0" />
+<vel value="0.0260" flag="0" />
+<psa03 value="0.0174" flag="0" />
+<psa10 value="0.0210" flag="0" />
+<psa30 value="0.0152" flag="0" />
+</comp>
+</station>
+<station code="BHHZ" name="BHHZ" insttype="LE-3DliteMkII" lat="-39.4893" lon="176.063" dist="563.429466" source="" netid="" commtype="" loc="" intensity="4.1" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0053" flag="T" />
+<vel value="0.5908" flag="T" />
+<psa03 value="0.1562" flag="T" />
+<psa10 value="0.1277" flag="T" />
+<psa30 value="0.1111" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0078" flag="T" />
+<vel value="1.9062" flag="T" />
+<psa03 value="0.5040" flag="T" />
+<psa10 value="0.4123" flag="T" />
+<psa30 value="0.3586" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0043" flag="T" />
+<vel value="1.3233" flag="T" />
+<psa03 value="0.3496" flag="T" />
+<psa10 value="0.2860" flag="T" />
+<psa30 value="0.2486" flag="T" />
+</comp>
+</station>
+<station code="BHW" name="BHW" insttype="L4C-3D" lat="-41.4082" lon="174.871" dist="348.525717" source="" netid="" commtype="" loc="" intensity="1.3">
+<comp name="EHE">
+<acc value="0.0129" flag="0" />
+<vel value="0.0339" flag="0" />
+<psa03 value="0.0219" flag="0" />
+<psa10 value="0.0300" flag="0" />
+<psa30 value="0.0153" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0117" flag="0" />
+<vel value="0.0341" flag="0" />
+<psa03 value="0.0186" flag="0" />
+<psa10 value="0.0327" flag="0" />
+<psa30 value="0.0233" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0099" flag="0" />
+<vel value="0.0455" flag="0" />
+<psa03 value="0.0204" flag="0" />
+<psa10 value="0.0348" flag="0" />
+<psa30 value="0.0109" flag="0" />
+</comp>
+</station>
+<station code="BKZ" name="BKZ" insttype="STS-2" lat="-39.1657" lon="176.493" dist="615.003483" source="" netid="" commtype="" loc="" intensity="1.1">
+<comp name="HHE">
+<acc value="0.0066" flag="T" />
+<vel value="0.0274" flag="T" />
+<psa03 value="0.0069" flag="0" />
+<psa10 value="0.0138" flag="0" />
+<psa30 value="0.0113" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0041" flag="T" />
+<vel value="0.0142" flag="T" />
+<psa03 value="0.0049" flag="0" />
+<psa10 value="0.0103" flag="0" />
+<psa30 value="0.0081" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0075" flag="T" />
+<vel value="0.0242" flag="T" />
+<psa03 value="0.0086" flag="0" />
+<psa10 value="0.0266" flag="0" />
+<psa30 value="0.0117" flag="0" />
+</comp>
+</station>
+<station code="BSWZ" name="BSWZ" insttype="L4C-3D" lat="-41.7149" lon="173.876" dist="260.853424" source="" netid="" commtype="" loc="" intensity="nan">
+<comp name="EHE">
+<acc value="0.0410" flag="M" />
+<vel value="0.0955" flag="M" />
+<psa03 value="0.0450" flag="M" />
+<psa10 value="0.0902" flag="M" />
+<psa30 value="0.0323" flag="M" />
+</comp>
+<comp name="EHN">
+<acc value="0.0472" flag="M" />
+<vel value="0.1614" flag="M" />
+<psa03 value="0.0609" flag="M" />
+<psa10 value="0.1479" flag="M" />
+<psa30 value="0.0448" flag="M" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0305" flag="M" />
+<vel value="0.0771" flag="M" />
+<psa03 value="0.0336" flag="M" />
+<psa10 value="0.0926" flag="M" />
+<psa30 value="0.0375" flag="M" />
+</comp>
+</station>
+<station code="CAW" name="CAW" insttype="LE-3DliteMkII" lat="-41.1072" lon="175.066" dist="380.881831" source="" netid="" commtype="" loc="" intensity="4.9" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0316" flag="0" />
+<vel value="2.7837" flag="T" />
+<psa03 value="0.7356" flag="T" />
+<psa10 value="0.6018" flag="T" />
+<psa30 value="0.5233" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0431" flag="0" />
+<vel value="4.8223" flag="T" />
+<psa03 value="1.2745" flag="T" />
+<psa10 value="1.0427" flag="T" />
+<psa30 value="0.9067" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0184" flag="0" />
+<vel value="1.0203" flag="T" />
+<psa03 value="0.2699" flag="T" />
+<psa10 value="0.2207" flag="T" />
+<psa30 value="0.1922" flag="T" />
+</comp>
+</station>
+<station code="CKHZ" name="CKHZ" insttype="L4C-3D" lat="-39.6582" lon="177.078" dist="614.369477" source="" netid="" commtype="" loc="" intensity="2.2">
+<comp name="EHE">
+<acc value="0.0112" flag="T" />
+<vel value="0.0957" flag="T" />
+<psa03 value="0.0247" flag="T" />
+<psa10 value="0.0327" flag="0" />
+<psa30 value="0.0349" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0102" flag="T" />
+<vel value="0.0385" flag="T" />
+<psa03 value="0.0137" flag="T" />
+<psa10 value="0.0306" flag="0" />
+<psa30 value="0.0154" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0046" flag="T" />
+<vel value="0.0164" flag="T" />
+<psa03 value="0.0081" flag="T" />
+<psa10 value="0.0124" flag="0" />
+<psa30 value="0.0090" flag="T" />
+</comp>
+</station>
+<station code="CMWZ" name="CMWZ" insttype="L4C-3D" lat="-41.749" lon="174.214" dist="282.074900" source="" netid="" commtype="" loc="" intensity="2.7">
+<comp name="EHE">
+<acc value="0.0572" flag="0" />
+<vel value="0.1548" flag="0" />
+<psa03 value="0.0990" flag="0" />
+<psa10 value="0.2216" flag="0" />
+<psa30 value="0.0756" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0722" flag="0" />
+<vel value="0.2090" flag="0" />
+<psa03 value="0.0978" flag="0" />
+<psa10 value="0.2327" flag="0" />
+<psa30 value="0.0625" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0454" flag="0" />
+<vel value="0.0907" flag="0" />
+<psa03 value="0.0573" flag="0" />
+<psa10 value="0.1336" flag="0" />
+<psa30 value="0.0576" flag="0" />
+</comp>
+</station>
+<station code="CNGZ" name="CNGZ" insttype="L4C-3D" lat="-38.4837" lon="178.207" dist="773.955325" source="" netid="" commtype="" loc="" intensity="1.3">
+<comp name="EHE">
+<acc value="0.0053" flag="T" />
+<vel value="0.0314" flag="T" />
+<psa03 value="0.0082" flag="T" />
+<psa10 value="0.0068" flag="0" />
+<psa30 value="0.0058" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0133" flag="T" />
+<vel value="0.0320" flag="T" />
+<psa03 value="0.0056" flag="T" />
+<psa10 value="0.0078" flag="0" />
+<psa30 value="0.0139" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0064" flag="T" />
+<vel value="0.0249" flag="T" />
+<psa03 value="0.0067" flag="T" />
+<psa10 value="0.0054" flag="0" />
+<psa30 value="0.0052" flag="0" />
+</comp>
+</station>
+<station code="CPWZ" name="CPWZ" insttype="LE-3DliteMkII" lat="-40.9098" lon="176.202" dist="472.330255" source="" netid="" commtype="" loc="" intensity="4.7" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0144" flag="T" />
+<vel value="3.3663" flag="T" />
+<psa03 value="0.8900" flag="T" />
+<psa10 value="0.7280" flag="T" />
+<psa30 value="0.6332" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0196" flag="T" />
+<vel value="4.0995" flag="T" />
+<psa03 value="1.0838" flag="T" />
+<psa10 value="0.8865" flag="T" />
+<psa30 value="0.7712" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0130" flag="T" />
+<vel value="0.9568" flag="T" />
+<psa03 value="0.2522" flag="T" />
+<psa10 value="0.2065" flag="T" />
+<psa30 value="0.1792" flag="T" />
+</comp>
+</station>
+<station code="CULC" name="CULC" insttype="CUSP3C" lat="-42.7594" lon="172.803" dist="129.262971" source="" netid="" commtype="" loc="" intensity="4.0">
+<comp name="HN2">
+<acc value="0.3151" flag="0" />
+<vel value="0.7124" flag="0" />
+<psa03 value="0.5801" flag="0" />
+<psa10 value="0.9175" flag="0" />
+<psa30 value="0.2930" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.2420" flag="0" />
+<vel value="0.4862" flag="0" />
+<psa03 value="0.4027" flag="0" />
+<psa10 value="0.8576" flag="0" />
+<psa30 value="0.2397" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.7438" flag="0" />
+<vel value="1.5781" flag="0" />
+<psa03 value="0.9725" flag="0" />
+<psa10 value="1.9279" flag="0" />
+<psa30 value="0.4759" flag="0" />
+</comp>
+</station>
+<station code="CVZ" name="CVZ" insttype="CMG-3ESPC" lat="-44.3831" lon="171.006" dist="146.855254" source="" netid="" commtype="" loc="" intensity="3.0">
+<comp name="HHE">
+<acc value="0.2434" flag="0" />
+<vel value="0.3073" flag="0" />
+<psa03 value="0.4947" flag="0" />
+<psa10 value="0.4907" flag="0" />
+<psa30 value="0.1327" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.1478" flag="0" />
+<vel value="0.1607" flag="0" />
+<psa03 value="0.3528" flag="0" />
+<psa10 value="0.2198" flag="0" />
+<psa30 value="0.0511" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.2505" flag="0" />
+<vel value="0.3653" flag="0" />
+<psa03 value="0.6257" flag="0" />
+<psa10 value="0.5355" flag="0" />
+<psa30 value="0.0830" flag="0" />
+</comp>
+</station>
+<station code="DCZ" name="DCZ" insttype="CMG-3ESP" lat="-45.4647" lon="167.154" dist="420.098432" source="" netid="" commtype="" loc="" intensity="1.1">
+<comp name="HHE">
+<acc value="0.0096" flag="0" />
+<vel value="0.0222" flag="0" />
+<psa03 value="0.0184" flag="0" />
+<psa10 value="0.0237" flag="0" />
+<psa30 value="0.0098" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0125" flag="0" />
+<vel value="0.0265" flag="0" />
+<psa03 value="0.0287" flag="0" />
+<psa10 value="0.0252" flag="0" />
+<psa30 value="0.0171" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0121" flag="0" />
+<vel value="0.0276" flag="0" />
+<psa03 value="0.0160" flag="0" />
+<psa10 value="0.0303" flag="0" />
+<psa30 value="0.0123" flag="0" />
+</comp>
+</station>
+<station code="DREZ" name="DREZ" insttype="L4C-3D" lat="-39.1888" lon="174.201" dist="494.732390" source="" netid="" commtype="" loc="" intensity="2.2">
+<comp name="EHE">
+<acc value="0.0451" flag="T" />
+<vel value="0.0917" flag="T" />
+<psa03 value="0.0523" flag="T" />
+<psa10 value="0.1502" flag="0" />
+<psa30 value="0.0354" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0453" flag="T" />
+<vel value="0.0983" flag="T" />
+<psa03 value="0.0626" flag="T" />
+<psa10 value="0.1597" flag="0" />
+<psa30 value="0.0478" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0201" flag="T" />
+<vel value="0.0437" flag="T" />
+<psa03 value="0.0300" flag="T" />
+<psa10 value="0.0728" flag="0" />
+<psa30 value="0.0131" flag="0" />
+</comp>
+</station>
+<station code="DRZ" name="DRZ" insttype="L4C-3D" lat="-39.2753" lon="175.564" dist="552.808942" source="" netid="" commtype="" loc="" intensity="2.1">
+<comp name="EHE">
+<acc value="0.0740" flag="T" />
+<vel value="0.0912" flag="T" />
+<psa03 value="0.1140" flag="T" />
+<psa10 value="0.1761" flag="T" />
+<psa30 value="0.0235" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0580" flag="T" />
+<vel value="0.0837" flag="T" />
+<psa03 value="0.0944" flag="T" />
+<psa10 value="0.1682" flag="T" />
+<psa30 value="0.0168" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0252" flag="T" />
+<vel value="0.0351" flag="T" />
+<psa03 value="0.0502" flag="T" />
+<psa10 value="0.0495" flag="T" />
+<psa30 value="0.0071" flag="0" />
+</comp>
+</station>
+<station code="DSZ" name="DSZ" insttype="CMG-3ESP" lat="-41.745" lon="171.805" dist="151.587244" source="" netid="" commtype="" loc="" intensity="3.6">
+<comp name="HHE">
+<acc value="0.5657" flag="0" />
+<vel value="0.8498" flag="T" />
+<psa03 value="0.9120" flag="0" />
+<psa10 value="1.5867" flag="T" />
+<psa30 value="0.1508" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.3053" flag="0" />
+<vel value="0.4083" flag="T" />
+<psa03 value="0.5094" flag="0" />
+<psa10 value="0.8136" flag="T" />
+<psa30 value="0.0767" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.5809" flag="0" />
+<vel value="0.5438" flag="T" />
+<psa03 value="1.4155" flag="0" />
+<psa10 value="1.0478" flag="T" />
+<psa30 value="0.1109" flag="0" />
+</comp>
+</station>
+<station code="DUWZ" name="DUWZ" insttype="LE-3DliteMkII" lat="-40.8017" lon="173.922" dist="332.918779" source="" netid="" commtype="" loc="" intensity="5.2" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0628" flag="0" />
+<vel value="0.5834" flag="T" />
+<psa03 value="0.1542" flag="T" />
+<psa10 value="0.1600" flag="T" />
+<psa30 value="0.1097" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0550" flag="0" />
+<vel value="5.6785" flag="T" />
+<psa03 value="1.5009" flag="T" />
+<psa10 value="1.2278" flag="T" />
+<psa30 value="1.0677" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0441" flag="0" />
+<vel value="1.6190" flag="T" />
+<psa03 value="0.4275" flag="T" />
+<psa10 value="0.3499" flag="T" />
+<psa30 value="0.3040" flag="T" />
+</comp>
+</station>
+<station code="DVHZ" name="DVHZ" insttype="L4C-3D" lat="-40.2989" lon="176.167" dist="509.180920" source="" netid="" commtype="" loc="" intensity="1.2">
+<comp name="EHE">
+<acc value="0.0066" flag="0" />
+<vel value="0.0298" flag="0" />
+<psa03 value="0.0168" flag="0" />
+<psa10 value="0.0159" flag="0" />
+<psa30 value="0.0156" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0086" flag="0" />
+<vel value="0.0226" flag="0" />
+<psa03 value="0.0121" flag="0" />
+<psa10 value="0.0275" flag="0" />
+<psa30 value="0.0170" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0035" flag="0" />
+<vel value="0.0208" flag="0" />
+<psa03 value="0.0088" flag="0" />
+<psa10 value="0.0101" flag="0" />
+<psa30 value="0.0085" flag="0" />
+</comp>
+</station>
+<station code="EAZ" name="EAZ" insttype="CMG-3ESPC" lat="-45.2311" lon="169.308" dist="285.261613" source="" netid="" commtype="" loc="" intensity="2.0">
+<comp name="HHE">
+<acc value="0.0277" flag="0" />
+<vel value="0.0545" flag="0" />
+<psa03 value="0.0426" flag="0" />
+<psa10 value="0.0603" flag="0" />
+<psa30 value="0.0178" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0251" flag="0" />
+<vel value="0.0605" flag="0" />
+<psa03 value="0.0443" flag="0" />
+<psa10 value="0.0811" flag="0" />
+<psa30 value="0.0268" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0377" flag="0" />
+<vel value="0.0691" flag="0" />
+<psa03 value="0.0544" flag="0" />
+<psa10 value="0.0685" flag="0" />
+<psa30 value="0.0299" flag="0" />
+</comp>
+</station>
+<station code="EDRZ" name="EDRZ" insttype="L4C-3D" lat="-38.1065" lon="176.739" dist="718.009542" source="" netid="" commtype="" loc="" intensity="1.1">
+<comp name="EHE">
+<acc value="0.0052" flag="T" />
+<vel value="0.0254" flag="T" />
+<psa03 value="0.0067" flag="T" />
+<psa10 value="0.0097" flag="0" />
+<psa30 value="0.0178" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0060" flag="T" />
+<vel value="0.0190" flag="T" />
+<psa03 value="0.0064" flag="T" />
+<psa10 value="0.0163" flag="0" />
+<psa30 value="0.0114" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0020" flag="T" />
+<vel value="0.0339" flag="T" />
+<psa03 value="0.0090" flag="T" />
+<psa10 value="0.0073" flag="0" />
+<psa30 value="0.0064" flag="0" />
+</comp>
+</station>
+<station code="EPAZ" name="EPAZ" insttype="2" lat="-36.8754" lon="174.744" dist="747.666790" source="" netid="" commtype="" loc="" intensity="2.3">
+<comp name="EH1">
+<acc value="0.0028" flag="T" />
+<vel value="0.0088" flag="T" />
+<psa03 value="0.0031" flag="T" />
+<psa10 value="0.0097" flag="0" />
+<psa30 value="0.0062" flag="T" />
+</comp>
+<comp name="EH2">
+<acc value="0.0038" flag="T" />
+<vel value="0.1215" flag="T" />
+<psa03 value="0.0321" flag="T" />
+<psa10 value="0.0263" flag="0" />
+<psa30 value="0.0228" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0024" flag="T" />
+<vel value="0.0107" flag="T" />
+<psa03 value="0.0032" flag="T" />
+<psa10 value="0.0055" flag="0" />
+<psa30 value="0.0034" flag="T" />
+</comp>
+</station>
+<station code="ETAZ" name="ETAZ" insttype="2" lat="-36.9535" lon="174.928" dist="746.048860" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="EH1">
+<acc value="0.0024" flag="T" />
+<vel value="0.0069" flag="0" />
+<psa03 value="0.0035" flag="T" />
+<psa10 value="0.0112" flag="0" />
+<psa30 value="0.0034" flag="0" />
+</comp>
+<comp name="EH2">
+<acc value="0.0010" flag="T" />
+<vel value="0.0074" flag="0" />
+<psa03 value="0.0022" flag="T" />
+<psa10 value="0.0026" flag="0" />
+<psa30 value="0.0024" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0013" flag="T" />
+<vel value="0.0142" flag="0" />
+<psa03 value="0.0037" flag="T" />
+<psa10 value="0.0043" flag="0" />
+<psa30 value="0.0026" flag="0" />
+</comp>
+</station>
+<station code="ETVZ" name="ETVZ" insttype="CMG-3ESPC" lat="-39.1357" lon="175.711" dist="572.845576" source="" netid="" commtype="" loc="" intensity="1.6">
+<comp name="HHE">
+<acc value="0.0155" flag="T" />
+<vel value="0.0300" flag="T" />
+<psa03 value="0.0226" flag="T" />
+<psa10 value="0.0542" flag="0" />
+<psa30 value="0.0195" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0083" flag="T" />
+<vel value="0.0207" flag="T" />
+<psa03 value="0.0125" flag="T" />
+<psa10 value="0.0275" flag="0" />
+<psa30 value="0.0098" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0240" flag="T" />
+<vel value="0.0456" flag="T" />
+<psa03 value="0.0331" flag="T" />
+<psa10 value="0.0615" flag="0" />
+<psa30 value="0.0200" flag="0" />
+</comp>
+</station>
+<station code="FGPS" name="FGPS" insttype="CUSP3D" lat="-43.4632" lon="170.02" dist="107.688957" source="" netid="" commtype="" loc="" intensity="3.7">
+<comp name="HN2">
+<acc value="0.6722" flag="0" />
+<vel value="0.4710" flag="0" />
+<psa03 value="1.9670" flag="0" />
+<psa10 value="0.4929" flag="0" />
+<psa30 value="0.0975" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.6187" flag="0" />
+<vel value="0.4105" flag="0" />
+<psa03 value="1.1164" flag="0" />
+<psa10 value="0.3529" flag="0" />
+<psa30 value="0.0348" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="1.1841" flag="0" />
+<vel value="1.0266" flag="0" />
+<psa03 value="2.8332" flag="0" />
+<psa10 value="0.8779" flag="0" />
+<psa30 value="0.1029" flag="0" />
+</comp>
+</station>
+<station code="FJDS" name="FJDS" insttype="CUSP3D" lat="-43.3891" lon="170.184" dist="92.293600" source="" netid="" commtype="" loc="" intensity="3.6">
+<comp name="HN2">
+<acc value="0.5208" flag="0" />
+<vel value="0.4540" flag="0" />
+<psa03 value="1.4943" flag="0" />
+<psa10 value="0.5093" flag="0" />
+<psa30 value="0.0877" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.4763" flag="0" />
+<vel value="0.3383" flag="0" />
+<psa03 value="1.3169" flag="0" />
+<psa10 value="0.2741" flag="0" />
+<psa30 value="0.0591" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.9599" flag="0" />
+<vel value="0.8663" flag="0" />
+<psa03 value="2.1624" flag="0" />
+<psa10 value="0.5070" flag="0" />
+<psa30 value="0.1166" flag="0" />
+</comp>
+</station>
+<station code="FOZ" name="FOZ" insttype="CMG-3ESP" lat="-43.5321" lon="169.815" dist="125.891281" source="" netid="" commtype="" loc="" intensity="3.0">
+<comp name="HHE">
+<acc value="0.3362" flag="0" />
+<vel value="0.2828" flag="0" />
+<psa03 value="0.7172" flag="0" />
+<psa10 value="0.2629" flag="0" />
+<psa30 value="0.0902" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.2959" flag="0" />
+<vel value="0.3121" flag="0" />
+<psa03 value="0.3471" flag="0" />
+<psa10 value="0.3159" flag="0" />
+<psa30 value="0.0593" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.4030" flag="0" />
+<vel value="0.3701" flag="0" />
+<psa03 value="1.0260" flag="0" />
+<psa10 value="0.3338" flag="0" />
+<psa30 value="0.1035" flag="0" />
+</comp>
+</station>
+<station code="FWVZ" name="FWVZ" insttype="CMG-3ESPC" lat="-39.2549" lon="175.553" dist="553.971384" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="HHE">
+<acc value="0.0123" flag="T" />
+<vel value="0.0206" flag="0" />
+<psa03 value="0.0231" flag="T" />
+<psa10 value="0.0251" flag="0" />
+<psa30 value="0.0095" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0064" flag="T" />
+<vel value="0.0144" flag="0" />
+<psa03 value="0.0082" flag="T" />
+<psa10 value="0.0194" flag="0" />
+<psa30 value="0.0079" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0094" flag="T" />
+<vel value="0.0181" flag="0" />
+<psa03 value="0.0165" flag="T" />
+<psa10 value="0.0343" flag="0" />
+<psa30 value="0.0060" flag="0" />
+</comp>
+</station>
+<station code="GCSZ" name="GCSZ" insttype="2" lat="-43.316" lon="170.327" dist="78.585004" source="" netid="" commtype="" loc="" intensity="2.8">
+<comp name="EH1">
+<acc value="0.3677" flag="0" />
+<vel value="0.2419" flag="0" />
+<psa03 value="0.7917" flag="0" />
+<psa10 value="0.2069" flag="0" />
+<psa30 value="0.0461" flag="0" />
+</comp>
+<comp name="EH2">
+<acc value="0.3676" flag="0" />
+<vel value="0.2189" flag="0" />
+<psa03 value="0.7928" flag="0" />
+<psa10 value="0.1512" flag="0" />
+<psa30 value="0.0375" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.3040" flag="0" />
+<vel value="0.1801" flag="0" />
+<psa03 value="1.0462" flag="0" />
+<psa10 value="0.1154" flag="0" />
+<psa30 value="0.0362" flag="0" />
+</comp>
+</station>
+<station code="GLWS" name="GLWS" insttype="FBA-23-DECK" lat="-42.5942" lon="172.511" dist="113.599091" source="" netid="" commtype="" loc="" intensity="4.0">
+<comp name="HN2">
+<acc value="1.2015" flag="0" />
+<vel value="1.6613" flag="0" />
+<psa03 value="1.7150" flag="0" />
+<psa10 value="3.5927" flag="0" />
+<psa30 value="0.1974" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.6249" flag="0" />
+<vel value="0.5769" flag="0" />
+<psa03 value="1.0287" flag="0" />
+<psa10 value="0.8046" flag="0" />
+<psa30 value="0.1345" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="1.1902" flag="0" />
+<vel value="1.5609" flag="0" />
+<psa03 value="1.9312" flag="0" />
+<psa10 value="3.1803" flag="0" />
+<psa30 value="0.2433" flag="0" />
+</comp>
+</station>
+<station code="GRRZ" name="GRRZ" insttype="L4C-3D" lat="-38.3497" lon="176.11" dist="663.141298" source="" netid="" commtype="" loc="" intensity="2.3">
+<comp name="EHE">
+<acc value="0.0131" flag="T" />
+<vel value="0.0407" flag="T" />
+<psa03 value="0.0137" flag="T" />
+<psa10 value="0.0443" flag="0" />
+<psa30 value="0.0270" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0156" flag="T" />
+<vel value="0.1253" flag="T" />
+<psa03 value="0.0328" flag="T" />
+<psa10 value="0.0391" flag="0" />
+<psa30 value="0.0239" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0070" flag="T" />
+<vel value="0.1446" flag="T" />
+<psa03 value="0.0379" flag="T" />
+<psa10 value="0.0311" flag="0" />
+<psa30 value="0.0268" flag="0" />
+</comp>
+</station>
+<station code="GVZ" name="GVZ" insttype="CMG-3ESPC" lat="-42.9674" lon="173.035" dist="143.924914" source="" netid="" commtype="" loc="" intensity="3.4">
+<comp name="HHE">
+<acc value="0.2817" flag="0" />
+<vel value="0.3127" flag="0" />
+<psa03 value="0.5184" flag="0" />
+<psa10 value="0.6578" flag="0" />
+<psa30 value="0.1250" flag="T" />
+</comp>
+<comp name="HHZ">
+<acc value="0.1546" flag="0" />
+<vel value="0.3435" flag="0" />
+<psa03 value="0.2863" flag="0" />
+<psa10 value="0.2730" flag="0" />
+<psa30 value="0.0975" flag="T" />
+</comp>
+<comp name="HHN">
+<acc value="0.3685" flag="0" />
+<vel value="0.6215" flag="0" />
+<psa03 value="0.5634" flag="0" />
+<psa10 value="1.0481" flag="0" />
+<psa30 value="0.3100" flag="T" />
+</comp>
+</station>
+<station code="HAFS" name="HAFS" insttype="CUSP3D" lat="-43.1489" lon="170.556" dist="55.831577" source="" netid="" commtype="" loc="" intensity="4.2">
+<comp name="HN2">
+<acc value="1.7237" flag="0" />
+<vel value="1.6394" flag="0" />
+<psa03 value="2.7948" flag="0" />
+<psa10 value="2.4779" flag="0" />
+<psa30 value="0.2698" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.8996" flag="0" />
+<vel value="0.6216" flag="0" />
+<psa03 value="2.3284" flag="0" />
+<psa10 value="0.6892" flag="0" />
+<psa30 value="0.1380" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="1.6978" flag="0" />
+<vel value="2.4461" flag="0" />
+<psa03 value="2.6575" flag="0" />
+<psa10 value="3.6968" flag="0" />
+<psa30 value="0.2685" flag="0" />
+</comp>
+</station>
+<station code="HAVS" name="HAVS" insttype="FBA-ES-T-BASALT" lat="-41.2723" lon="173.785" dist="286.775935" source="" netid="" commtype="" loc="" intensity="1.7">
+<comp name="HN2">
+<acc value="0.0346" flag="0" />
+<vel value="0.0494" flag="0" />
+<psa03 value="0.0667" flag="0" />
+<psa10 value="0.0650" flag="0" />
+<psa30 value="0.0277" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.0207" flag="0" />
+<vel value="0.0418" flag="0" />
+<psa03 value="0.0417" flag="0" />
+<psa10 value="0.0802" flag="0" />
+<psa30 value="0.0186" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.0349" flag="0" />
+<vel value="0.0518" flag="0" />
+<psa03 value="0.0895" flag="0" />
+<psa10 value="0.0896" flag="0" />
+<psa30 value="0.0144" flag="0" />
+</comp>
+</station>
+<station code="HBAZ" name="HBAZ" insttype="2" lat="-36.8501" lon="174.73" dist="749.800133" source="" netid="" commtype="" loc="" intensity="1.5">
+<comp name="EH1">
+<acc value="0.0018" flag="T" />
+<vel value="0.0326" flag="T" />
+<psa03 value="0.0086" flag="T" />
+<psa10 value="0.0071" flag="0" />
+<psa30 value="0.0068" flag="0" />
+</comp>
+<comp name="EH2">
+<acc value="0.0039" flag="T" />
+<vel value="0.0413" flag="T" />
+<psa03 value="0.0109" flag="T" />
+<psa10 value="0.0089" flag="0" />
+<psa30 value="0.0102" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0012" flag="T" />
+<vel value="0.0222" flag="T" />
+<psa03 value="0.0058" flag="T" />
+<psa10 value="0.0048" flag="0" />
+<psa30 value="0.0041" flag="0" />
+</comp>
+</station>
+<station code="HDWS" name="HDWS" insttype="FBA-23-DECK" lat="-43.883" lon="169.044" dist="198.569193" source="" netid="" commtype="" loc="" intensity="3.1">
+<comp name="HN2">
+<acc value="0.5326" flag="0" />
+<vel value="0.3985" flag="0" />
+<psa03 value="1.2411" flag="T" />
+<psa10 value="0.3785" flag="0" />
+<psa30 value="0.0466" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.1784" flag="0" />
+<vel value="0.1348" flag="0" />
+<psa03 value="0.8296" flag="T" />
+<psa10 value="0.0748" flag="0" />
+<psa30 value="0.0281" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.5260" flag="0" />
+<vel value="0.2915" flag="0" />
+<psa03 value="2.5585" flag="T" />
+<psa10 value="0.2602" flag="0" />
+<psa30 value="0.0230" flag="0" />
+</comp>
+</station>
+<station code="HIZ" name="HIZ" insttype="STS-2" lat="-38.5129" lon="174.856" dist="588.061061" source="" netid="" commtype="" loc="" intensity="1.2">
+<comp name="HHE">
+<acc value="0.0189" flag="T" />
+<vel value="0.0206" flag="T" />
+<psa03 value="0.0254" flag="T" />
+<psa10 value="0.0536" flag="0" />
+<psa30 value="0.0127" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0083" flag="T" />
+<vel value="0.0192" flag="T" />
+<psa03 value="0.0134" flag="T" />
+<psa10 value="0.0231" flag="0" />
+<psa30 value="0.0061" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0124" flag="T" />
+<vel value="0.0316" flag="T" />
+<psa03 value="0.0186" flag="T" />
+<psa10 value="0.0448" flag="0" />
+<psa30 value="0.0095" flag="0" />
+</comp>
+</station>
+<station code="HLRZ" name="HLRZ" insttype="L4C-3D" lat="-38.2519" lon="176.352" dist="684.507665" source="" netid="" commtype="" loc="" intensity="2.1">
+<comp name="EHE">
+<acc value="0.0088" flag="T" />
+<vel value="0.0802" flag="T" />
+<psa03 value="0.0209" flag="T" />
+<psa10 value="0.0243" flag="0" />
+<psa30 value="0.0148" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0104" flag="T" />
+<vel value="0.0275" flag="T" />
+<psa03 value="0.0110" flag="T" />
+<psa10 value="0.0369" flag="0" />
+<psa30 value="0.0198" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0029" flag="T" />
+<vel value="0.0748" flag="T" />
+<psa03 value="0.0198" flag="T" />
+<psa10 value="0.0161" flag="0" />
+<psa30 value="0.0140" flag="0" />
+</comp>
+</station>
+<station code="HMCS" name="HMCS" insttype="CUSP3D" lat="-42.7169" lon="170.964" dist="43.449849" source="" netid="" commtype="" loc="" intensity="4.2">
+<comp name="HN2">
+<acc value="3.1994" flag="0" />
+<vel value="1.5159" flag="0" />
+<psa03 value="3.3787" flag="0" />
+<psa10 value="2.7611" flag="0" />
+<psa30 value="0.4841" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.9122" flag="0" />
+<vel value="1.1217" flag="0" />
+<psa03 value="1.3286" flag="0" />
+<psa10 value="1.8908" flag="0" />
+<psa30 value="0.4667" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="3.2409" flag="0" />
+<vel value="2.1766" flag="0" />
+<psa03 value="8.3382" flag="0" />
+<psa10 value="2.4764" flag="0" />
+<psa30 value="0.3812" flag="0" />
+</comp>
+</station>
+<station code="HOWZ" name="HOWZ" insttype="L4C-3D" lat="-40.8973" lon="175.515" dist="425.100083" source="" netid="" commtype="" loc="" intensity="1.8">
+<comp name="EHE">
+<acc value="0.0149" flag="0" />
+<vel value="0.0376" flag="0" />
+<psa03 value="0.0297" flag="0" />
+<psa10 value="0.0581" flag="0" />
+<psa30 value="0.0257" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0178" flag="0" />
+<vel value="0.0549" flag="0" />
+<psa03 value="0.0292" flag="0" />
+<psa10 value="0.0444" flag="0" />
+<psa30 value="0.0174" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0090" flag="0" />
+<vel value="0.0370" flag="0" />
+<psa03 value="0.0171" flag="0" />
+<psa10 value="0.0190" flag="0" />
+<psa30 value="0.0110" flag="0" />
+</comp>
+</station>
+<station code="HRRZ" name="HRRZ" insttype="L4C-3D" lat="-38.3901" lon="176.284" dist="668.696144" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="EHE">
+<acc value="0.0043" flag="T" />
+<vel value="0.0197" flag="T" />
+<psa03 value="0.0071" flag="T" />
+<psa10 value="0.0173" flag="0" />
+<psa30 value="0.0076" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0074" flag="T" />
+<vel value="0.0119" flag="T" />
+<psa03 value="0.0087" flag="T" />
+<psa10 value="0.0194" flag="0" />
+<psa30 value="0.0072" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0023" flag="T" />
+<vel value="0.0085" flag="T" />
+<psa03 value="0.0024" flag="T" />
+<psa10 value="0.0083" flag="0" />
+<psa30 value="0.0052" flag="0" />
+</comp>
+</station>
+<station code="HSES" name="HSES" insttype="FBA-ES-T-BASALT" lat="-42.5232" lon="172.83" dist="140.504783" source="" netid="" commtype="" loc="" intensity="3.4">
+<comp name="HN2">
+<acc value="0.3703" flag="0" />
+<vel value="0.6080" flag="0" />
+<psa03 value="0.4737" flag="0" />
+<psa10 value="0.8186" flag="0" />
+<psa30 value="0.2295" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.1231" flag="0" />
+<vel value="0.1873" flag="0" />
+<psa03 value="0.3502" flag="0" />
+<psa10 value="0.2437" flag="0" />
+<psa30 value="0.0840" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.2806" flag="0" />
+<vel value="0.4010" flag="0" />
+<psa03 value="0.3903" flag="0" />
+<psa10 value="0.6853" flag="0" />
+<psa30 value="0.1288" flag="0" />
+</comp>
+</station>
+<station code="HSRZ" name="HSRZ" insttype="LE-3DliteMkII" lat="-38.3113" lon="176.245" dist="673.605819" source="" netid="" commtype="" loc="" intensity="4.7" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0054" flag="T" />
+<vel value="4.0748" flag="T" />
+<psa03 value="1.0774" flag="T" />
+<psa10 value="0.8812" flag="T" />
+<psa30 value="0.7665" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0049" flag="T" />
+<vel value="1.2184" flag="T" />
+<psa03 value="0.3221" flag="T" />
+<psa10 value="0.2635" flag="T" />
+<psa30 value="0.2291" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0035" flag="T" />
+<vel value="3.1313" flag="T" />
+<psa03 value="0.8279" flag="T" />
+<psa10 value="0.6772" flag="T" />
+<psa30 value="0.5891" flag="T" />
+</comp>
+</station>
+<station code="INGS" name="INGS" insttype="FBA-23-DECK" lat="-41.8571" lon="171.953" dist="144.092050" source="" netid="" commtype="" loc="" intensity="3.7">
+<comp name="HN2">
+<acc value="0.7266" flag="0" />
+<vel value="1.0168" flag="0" />
+<psa03 value="1.2560" flag="0" />
+<psa10 value="1.9274" flag="0" />
+<psa30 value="0.2835" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.4268" flag="0" />
+<vel value="0.4729" flag="0" />
+<psa03 value="0.6031" flag="0" />
+<psa10 value="1.5770" flag="0" />
+<psa30 value="0.1091" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.5857" flag="0" />
+<vel value="0.7052" flag="0" />
+<psa03 value="1.0873" flag="0" />
+<psa10 value="1.0787" flag="0" />
+<psa30 value="0.1606" flag="0" />
+</comp>
+</station>
+<station code="INZ" name="INZ" insttype="CMG-3ESP" lat="-42.7245" lon="171.444" dist="39.320600" source="" netid="" commtype="" loc="" intensity="3.2">
+<comp name="HHE">
+<acc value="0.8675" flag="0" />
+<vel value="0.4594" flag="0" />
+<psa03 value="1.2660" flag="0" />
+<psa10 value="0.8479" flag="0" />
+<psa30 value="0.1546" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="1.0152" flag="0" />
+<vel value="0.4349" flag="0" />
+<psa03 value="0.6715" flag="0" />
+<psa10 value="0.7496" flag="0" />
+<psa30 value="0.1124" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="1.7845" flag="0" />
+<vel value="0.4967" flag="0" />
+<psa03 value="1.0270" flag="0" />
+<psa10 value="1.1993" flag="0" />
+<psa30 value="0.2415" flag="0" />
+</comp>
+</station>
+<station code="JCZ" name="JCZ" insttype="CMG-3ESP" lat="-44.0732" lon="168.785" dist="226.734269" source="" netid="" commtype="" loc="" intensity="2.2">
+<comp name="HHE">
+<acc value="0.0713" flag="0" />
+<vel value="0.1006" flag="0" />
+<psa03 value="0.1223" flag="0" />
+<psa10 value="0.0848" flag="0" />
+<psa30 value="0.0279" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0351" flag="0" />
+<vel value="0.0410" flag="0" />
+<psa03 value="0.0829" flag="0" />
+<psa10 value="0.0606" flag="0" />
+<psa30 value="0.0146" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.1007" flag="0" />
+<vel value="0.1081" flag="0" />
+<psa03 value="0.2041" flag="0" />
+<psa10 value="0.1742" flag="0" />
+<psa30 value="0.0314" flag="0" />
+</comp>
+</station>
+<station code="KAHZ" name="KAHZ" insttype="L4C-3D" lat="-39.7942" lon="176.877" dist="591.481974" source="" netid="" commtype="" loc="" intensity="1.8">
+<comp name="EHE">
+<acc value="0.0180" flag="T" />
+<vel value="0.0591" flag="T" />
+<psa03 value="0.0215" flag="T" />
+<psa10 value="0.0568" flag="0" />
+<psa30 value="0.0390" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0167" flag="T" />
+<vel value="0.0536" flag="T" />
+<psa03 value="0.0192" flag="T" />
+<psa10 value="0.0540" flag="0" />
+<psa30 value="0.0302" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0105" flag="T" />
+<vel value="0.0496" flag="T" />
+<psa03 value="0.0130" flag="T" />
+<psa10 value="0.0271" flag="0" />
+<psa30 value="0.0160" flag="T" />
+</comp>
+</station>
+<station code="KARZ" name="KARZ" insttype="L4C-3D" lat="-38.0202" lon="176.244" dist="699.687101" source="" netid="" commtype="" loc="" intensity="1.5">
+<comp name="EHE">
+<acc value="0.0030" flag="T" />
+<vel value="0.0414" flag="T" />
+<psa03 value="0.0109" flag="T" />
+<psa10 value="0.0115" flag="0" />
+<psa30 value="0.0100" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0023" flag="T" />
+<vel value="0.0070" flag="T" />
+<psa03 value="0.0027" flag="T" />
+<psa10 value="0.0049" flag="0" />
+<psa30 value="0.0049" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0015" flag="T" />
+<vel value="0.0064" flag="T" />
+<psa03 value="0.0024" flag="T" />
+<psa10 value="0.0034" flag="0" />
+<psa30 value="0.0037" flag="0" />
+</comp>
+</station>
+<station code="KATZ" name="KATZ" insttype="L4C-3D" lat="-38.9749" lon="175.695" dist="585.971906" source="" netid="" commtype="" loc="" intensity="1.5">
+<comp name="EHE">
+<acc value="0.0187" flag="T" />
+<vel value="0.0326" flag="T" />
+<psa03 value="0.0224" flag="T" />
+<psa10 value="0.0565" flag="0" />
+<psa30 value="0.0097" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0248" flag="T" />
+<vel value="0.0405" flag="T" />
+<psa03 value="0.0294" flag="T" />
+<psa10 value="0.0670" flag="0" />
+<psa30 value="0.0131" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0074" flag="T" />
+<vel value="0.0172" flag="T" />
+<psa03 value="0.0141" flag="T" />
+<psa10 value="0.0153" flag="0" />
+<psa30 value="0.0065" flag="0" />
+</comp>
+</station>
+<station code="KEKS" name="KEKS" insttype="FBA-ES-T-BASALT" lat="-41.9557" lon="173.981" dist="253.725765" source="" netid="" commtype="" loc="" intensity="2.3">
+<comp name="HN2">
+<acc value="0.0434" flag="0" />
+<vel value="0.0947" flag="0" />
+<psa03 value="0.0980" flag="0" />
+<psa10 value="0.1190" flag="0" />
+<psa30 value="0.0554" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.0285" flag="0" />
+<vel value="0.0686" flag="0" />
+<psa03 value="0.0558" flag="0" />
+<psa10 value="0.0694" flag="0" />
+<psa30 value="0.0458" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.0447" flag="0" />
+<vel value="0.1143" flag="0" />
+<psa03 value="0.0956" flag="0" />
+<psa10 value="0.1318" flag="0" />
+<psa30 value="0.0495" flag="0" />
+</comp>
+</station>
+<station code="KHEZ" name="KHEZ" insttype="CMG-3ESPC" lat="-39.2942" lon="174.014" dist="476.751719" source="" netid="" commtype="" loc="" intensity="2.2">
+<comp name="HHE">
+<acc value="0.0546" flag="T" />
+<vel value="0.1020" flag="T" />
+<psa03 value="0.1221" flag="T" />
+<psa10 value="0.1133" flag="0" />
+<psa30 value="0.0258" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0470" flag="T" />
+<vel value="0.0289" flag="T" />
+<psa03 value="0.0801" flag="T" />
+<psa10 value="0.0504" flag="0" />
+<psa30 value="0.0153" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0725" flag="T" />
+<vel value="0.0749" flag="T" />
+<psa03 value="0.1192" flag="T" />
+<psa10 value="0.0978" flag="0" />
+<psa30 value="0.0300" flag="0" />
+</comp>
+</station>
+<station code="KHLS" name="KHLS" insttype="FBA-ES-T-BASALT" lat="-40.557" lon="172.612" dist="298.748688" source="" netid="" commtype="" loc="" intensity="2.9">
+<comp name="HN2">
+<acc value="0.1947" flag="T" />
+<vel value="0.2901" flag="T" />
+<psa03 value="0.3835" flag="T" />
+<psa10 value="0.6613" flag="T" />
+<psa30 value="0.0740" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.0964" flag="T" />
+<vel value="0.1591" flag="T" />
+<psa03 value="0.1657" flag="T" />
+<psa10 value="0.3400" flag="T" />
+<psa30 value="0.0204" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.1658" flag="T" />
+<vel value="0.1812" flag="T" />
+<psa03 value="0.3526" flag="T" />
+<psa10 value="0.4589" flag="T" />
+<psa30 value="0.0535" flag="0" />
+</comp>
+</station>
+<station code="KHZ" name="KHZ" insttype="STS-2" lat="-42.416" lon="173.539" dist="198.595723" source="" netid="" commtype="" loc="" intensity="nan">
+<comp name="HHE">
+<acc value="0.0508" flag="M" />
+<vel value="0.1442" flag="M" />
+<psa03 value="0.0720" flag="M" />
+<psa10 value="0.1521" flag="M" />
+<psa30 value="0.0878" flag="M" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0413" flag="M" />
+<vel value="0.1438" flag="M" />
+<psa03 value="0.0766" flag="M" />
+<psa10 value="0.1030" flag="M" />
+<psa30 value="0.0802" flag="M" />
+</comp>
+<comp name="HHN">
+<acc value="0.0811" flag="M" />
+<vel value="0.2293" flag="M" />
+<psa03 value="0.0983" flag="M" />
+<psa10 value="0.1645" flag="M" />
+<psa30 value="0.0979" flag="M" />
+</comp>
+</station>
+<station code="KIW" name="KIW" insttype="L4C-3D" lat="-40.8609" lon="174.91" dist="387.431593" source="" netid="" commtype="" loc="" intensity="1.3">
+<comp name="EHE">
+<acc value="0.0134" flag="0" />
+<vel value="0.0214" flag="0" />
+<psa03 value="0.0379" flag="0" />
+<psa10 value="0.0333" flag="0" />
+<psa30 value="0.0079" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0177" flag="0" />
+<vel value="0.0324" flag="0" />
+<psa03 value="0.0468" flag="0" />
+<psa10 value="0.0337" flag="0" />
+<psa30 value="0.0163" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0101" flag="0" />
+<vel value="0.0229" flag="0" />
+<psa03 value="0.0207" flag="0" />
+<psa10 value="0.0291" flag="0" />
+<psa30 value="0.0100" flag="0" />
+</comp>
+</station>
+<station code="KMRZ" name="KMRZ" insttype="LE-3DliteMkII" lat="-37.8456" lon="175.942" dist="700.891207" source="" netid="" commtype="" loc="" intensity="3.1">
+<comp name="EHE">
+<acc value="0.0044" flag="T" />
+<vel value="0.2809" flag="T" />
+<psa03 value="0.0742" flag="T" />
+<psa10 value="0.0607" flag="T" />
+<psa30 value="0.0528" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0029" flag="T" />
+<vel value="0.4007" flag="T" />
+<psa03 value="0.1059" flag="T" />
+<psa10 value="0.0867" flag="T" />
+<psa30 value="0.0754" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0047" flag="T" />
+<vel value="0.3698" flag="T" />
+<psa03 value="0.0970" flag="T" />
+<psa10 value="0.0796" flag="T" />
+<psa30 value="0.0689" flag="T" />
+</comp>
+</station>
+<station code="KPOC" name="KPOC" insttype="CUSP3D" lat="-43.3765" lon="172.664" dist="118.315001" source="" netid="" commtype="" loc="" intensity="3.6">
+<comp name="HN2">
+<acc value="0.4872" flag="0" />
+<vel value="0.9556" flag="0" />
+<psa03 value="0.9923" flag="0" />
+<psa10 value="1.7305" flag="0" />
+<psa30 value="0.3397" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.1629" flag="0" />
+<vel value="0.4479" flag="0" />
+<psa03 value="0.2960" flag="0" />
+<psa10 value="0.8810" flag="0" />
+<psa30 value="0.2261" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.4898" flag="0" />
+<vel value="0.8846" flag="0" />
+<psa03 value="1.0775" flag="0" />
+<psa10 value="1.0576" flag="0" />
+<psa30 value="0.3098" flag="0" />
+</comp>
+</station>
+<station code="KRHZ" name="KRHZ" insttype="L4C-3D" lat="-39.6449" lon="176.37" dist="569.943449" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="EHE">
+<acc value="0.0065" flag="T" />
+<vel value="0.0182" flag="0" />
+<psa03 value="0.0120" flag="0" />
+<psa10 value="0.0189" flag="0" />
+<psa30 value="0.0069" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0070" flag="T" />
+<vel value="0.0145" flag="0" />
+<psa03 value="0.0160" flag="0" />
+<psa10 value="0.0225" flag="0" />
+<psa30 value="0.0059" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0049" flag="T" />
+<vel value="0.0121" flag="0" />
+<psa03 value="0.0112" flag="0" />
+<psa10 value="0.0126" flag="0" />
+<psa30 value="0.0069" flag="0" />
+</comp>
+</station>
+<station code="KRVZ" name="KRVZ" insttype="L4C-3D" lat="-39.0944" lon="175.641" dist="572.642729" source="" netid="" commtype="" loc="" intensity="1.8">
+<comp name="EHE">
+<acc value="0.0164" flag="T" />
+<vel value="0.0326" flag="T" />
+<psa03 value="0.0199" flag="T" />
+<psa10 value="0.0524" flag="0" />
+<psa30 value="0.0101" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0171" flag="T" />
+<vel value="0.0565" flag="T" />
+<psa03 value="0.0256" flag="T" />
+<psa10 value="0.0440" flag="0" />
+<psa30 value="0.0112" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0070" flag="T" />
+<vel value="0.0329" flag="T" />
+<psa03 value="0.0089" flag="T" />
+<psa10 value="0.0200" flag="0" />
+<psa30 value="0.0061" flag="0" />
+</comp>
+</station>
+<station code="KUTZ" name="KUTZ" insttype="L4C-3D" lat="-38.4891" lon="175.823" dist="635.886858" source="" netid="" commtype="" loc="" intensity="2.2">
+<comp name="EHE">
+<acc value="0.0175" flag="T" />
+<vel value="0.1005" flag="T" />
+<psa03 value="0.0341" flag="T" />
+<psa10 value="0.0494" flag="0" />
+<psa30 value="0.0261" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0171" flag="T" />
+<vel value="0.0334" flag="T" />
+<psa03 value="0.0349" flag="T" />
+<psa10 value="0.0386" flag="0" />
+<psa30 value="0.0211" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0132" flag="T" />
+<vel value="0.0335" flag="T" />
+<psa03 value="0.0149" flag="T" />
+<psa10 value="0.0325" flag="0" />
+<psa30 value="0.0081" flag="0" />
+</comp>
+</station>
+<station code="KWHZ" name="KWHZ" insttype="LE-3DliteMkII" lat="-39.424" lon="176.423" dist="590.285086" source="" netid="" commtype="" loc="" intensity="3.6" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0185" flag="T" />
+<vel value="0.9226" flag="T" />
+<psa03 value="0.2433" flag="T" />
+<psa10 value="0.1992" flag="T" />
+<psa30 value="0.1730" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0139" flag="T" />
+<vel value="0.4866" flag="T" />
+<psa03 value="0.1282" flag="T" />
+<psa10 value="0.1050" flag="T" />
+<psa30 value="0.0911" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0090" flag="T" />
+<vel value="0.6187" flag="T" />
+<psa03 value="0.1640" flag="T" />
+<psa10 value="0.1340" flag="T" />
+<psa30 value="0.1168" flag="T" />
+</comp>
+</station>
+<station code="LBZ" name="LBZ" insttype="CMG-3ESP" lat="-44.3856" lon="170.184" dist="168.904891" source="" netid="" commtype="" loc="" intensity="2.5">
+<comp name="HHE">
+<acc value="0.0730" flag="0" />
+<vel value="0.1541" flag="0" />
+<psa03 value="0.1293" flag="0" />
+<psa10 value="0.1927" flag="0" />
+<psa30 value="0.0631" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0705" flag="0" />
+<vel value="0.1503" flag="0" />
+<psa03 value="0.1508" flag="0" />
+<psa10 value="0.2082" flag="0" />
+<psa30 value="0.0602" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0454" flag="0" />
+<vel value="0.1421" flag="0" />
+<psa03 value="0.1313" flag="0" />
+<psa10 value="0.1174" flag="0" />
+<psa30 value="0.0668" flag="0" />
+</comp>
+</station>
+<station code="LIRZ" name="LIRZ" insttype="L4C-3D" lat="-38.0036" lon="176.385" dist="708.395625" source="" netid="" commtype="" loc="" intensity="1.4">
+<comp name="EHE">
+<acc value="0.0022" flag="T" />
+<vel value="0.0346" flag="T" />
+<psa03 value="0.0091" flag="T" />
+<psa10 value="0.0075" flag="0" />
+<psa30 value="0.0065" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0023" flag="T" />
+<vel value="0.0381" flag="T" />
+<psa03 value="0.0100" flag="T" />
+<psa10 value="0.0082" flag="0" />
+<psa30 value="0.0071" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0020" flag="T" />
+<vel value="0.0038" flag="T" />
+<psa03 value="0.0025" flag="T" />
+<psa10 value="0.0058" flag="0" />
+<psa30 value="0.0018" flag="0" />
+</comp>
+</station>
+<station code="LREZ" name="LREZ" insttype="L4C-3D" lat="-39.4602" lon="174.403" dist="477.601217" source="" netid="" commtype="" loc="" intensity="2.3">
+<comp name="EHE">
+<acc value="0.0838" flag="T" />
+<vel value="0.1118" flag="T" />
+<psa03 value="0.1497" flag="T" />
+<psa10 value="0.1907" flag="0" />
+<psa30 value="0.0326" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0794" flag="T" />
+<vel value="0.1202" flag="T" />
+<psa03 value="0.1708" flag="T" />
+<psa10 value="0.2582" flag="0" />
+<psa30 value="0.0327" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0287" flag="T" />
+<vel value="0.0936" flag="T" />
+<psa03 value="0.0630" flag="T" />
+<psa10 value="0.0856" flag="0" />
+<psa30 value="0.0171" flag="0" />
+</comp>
+</station>
+<station code="LTZ" name="LTZ" insttype="CMG-3ESP" lat="-42.7817" lon="172.271" dist="87.209731" source="" netid="" commtype="" loc="" intensity="3.5">
+<comp name="HHE">
+<acc value="0.5971" flag="0" />
+<vel value="0.8152" flag="0" />
+<psa03 value="0.9309" flag="0" />
+<psa10 value="0.7251" flag="0" />
+<psa30 value="0.1667" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.4220" flag="0" />
+<vel value="0.5668" flag="0" />
+<psa03 value="0.7240" flag="0" />
+<psa10 value="1.0312" flag="0" />
+<psa30 value="0.1188" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.5399" flag="0" />
+<vel value="0.7834" flag="0" />
+<psa03 value="0.9028" flag="0" />
+<psa10 value="1.3290" flag="0" />
+<psa30 value="0.1956" flag="0" />
+</comp>
+</station>
+<station code="MARZ" name="MARZ" insttype="L4C-3D" lat="-37.9849" lon="176.675" dist="725.249876" source="" netid="" commtype="" loc="" intensity="2.0">
+<comp name="EHE">
+<acc value="0.0030" flag="T" />
+<vel value="0.0797" flag="T" />
+<psa03 value="0.0211" flag="T" />
+<psa10 value="0.0172" flag="0" />
+<psa30 value="0.0150" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0031" flag="T" />
+<vel value="0.0095" flag="T" />
+<psa03 value="0.0074" flag="T" />
+<psa10 value="0.0068" flag="0" />
+<psa30 value="0.0080" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0016" flag="T" />
+<vel value="0.0168" flag="T" />
+<psa03 value="0.0045" flag="T" />
+<psa10 value="0.0036" flag="0" />
+<psa30 value="0.0031" flag="0" />
+</comp>
+</station>
+<station code="MAVZ" name="MAVZ" insttype="CMG-3TB-GN" lat="-39.2679" lon="175.562" dist="553.337884" source="" netid="" commtype="" loc="" intensity="1.2">
+<comp name="HH1">
+<acc value="0.0102" flag="T" />
+<vel value="0.0180" flag="0" />
+<psa03 value="0.0140" flag="0" />
+<psa10 value="0.0259" flag="0" />
+<psa30 value="0.0071" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0063" flag="T" />
+<vel value="0.0124" flag="0" />
+<psa03 value="0.0141" flag="0" />
+<psa10 value="0.0233" flag="0" />
+<psa30 value="0.0060" flag="0" />
+</comp>
+<comp name="HH2">
+<acc value="0.0112" flag="T" />
+<vel value="0.0309" flag="0" />
+<psa03 value="0.0166" flag="0" />
+<psa10 value="0.0310" flag="0" />
+<psa30 value="0.0099" flag="0" />
+</comp>
+</station>
+<station code="MBAZ" name="MBAZ" insttype="2" lat="-36.7688" lon="174.898" dist="763.874320" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="EH1">
+<acc value="0.0002" flag="T" />
+<vel value="0.0103" flag="0" />
+<psa03 value="0.0027" flag="T" />
+<psa10 value="0.0022" flag="0" />
+<psa30 value="0.0019" flag="0" />
+</comp>
+<comp name="EH2">
+<acc value="0.0016" flag="T" />
+<vel value="0.0041" flag="0" />
+<psa03 value="0.0023" flag="T" />
+<psa10 value="0.0048" flag="0" />
+<psa30 value="0.0018" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0014" flag="T" />
+<vel value="0.0042" flag="0" />
+<psa03 value="0.0033" flag="T" />
+<psa10 value="0.0027" flag="0" />
+<psa30 value="0.0023" flag="0" />
+</comp>
+</station>
+<station code="MCAS" name="MCAS" insttype="FBA-ES-T-DECK" lat="-41.7999" lon="172.328" dist="164.134173" source="" netid="" commtype="" loc="" intensity="3.9">
+<comp name="HN2">
+<acc value="0.7383" flag="0" />
+<vel value="1.4266" flag="0" />
+<psa03 value="1.5320" flag="0" />
+<psa10 value="2.1643" flag="0" />
+<psa30 value="0.2292" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.5667" flag="0" />
+<vel value="0.6608" flag="0" />
+<psa03 value="0.7936" flag="0" />
+<psa10 value="1.7648" flag="0" />
+<psa30 value="0.1099" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.5714" flag="0" />
+<vel value="0.9748" flag="0" />
+<psa03 value="1.1039" flag="0" />
+<psa10 value="2.6493" flag="0" />
+<psa30 value="0.2006" flag="0" />
+</comp>
+</station>
+<station code="MCHZ" name="MCHZ" insttype="L4C-3D" lat="-39.4443" lon="176.697" dist="605.653117" source="" netid="" commtype="" loc="" intensity="2.8">
+<comp name="EHE">
+<acc value="0.0380" flag="T" />
+<vel value="0.1267" flag="T" />
+<psa03 value="0.0403" flag="T" />
+<psa10 value="0.0812" flag="0" />
+<psa30 value="0.0322" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0330" flag="T" />
+<vel value="0.2481" flag="T" />
+<psa03 value="0.0651" flag="T" />
+<psa10 value="0.0722" flag="0" />
+<psa30 value="0.0524" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0100" flag="T" />
+<vel value="0.0773" flag="T" />
+<psa03 value="0.0202" flag="T" />
+<psa10 value="0.0352" flag="0" />
+<psa30 value="0.0145" flag="T" />
+</comp>
+</station>
+<station code="MECS" name="MECS" insttype="FBA-ES-T-DECK" lat="-44.2304" lon="169.233" dist="206.437157" source="" netid="" commtype="" loc="" intensity="3.1">
+<comp name="HN2">
+<acc value="0.2553" flag="0" />
+<vel value="0.4320" flag="0" />
+<psa03 value="0.4279" flag="0" />
+<psa10 value="0.6694" flag="0" />
+<psa30 value="0.1040" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.1780" flag="0" />
+<vel value="0.2546" flag="0" />
+<psa03 value="0.3726" flag="0" />
+<psa10 value="0.5185" flag="0" />
+<psa30 value="0.0453" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.2121" flag="0" />
+<vel value="0.3685" flag="0" />
+<psa03 value="0.3618" flag="0" />
+<psa10 value="0.6245" flag="0" />
+<psa30 value="0.0915" flag="0" />
+</comp>
+</station>
+<station code="MHCZ" name="MHCZ" insttype="LE-3DliteMkII" lat="-43.5316" lon="171.568" dist="57.035135" source="" netid="" commtype="" loc="" intensity="3.2">
+<comp name="EHE">
+<acc value="0.0118" flag="0" />
+<vel value="0.0441" flag="0" />
+<psa03 value="0.0112" flag="0" />
+<psa10 value="0.0093" flag="0" />
+<psa30 value="0.0079" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.7685" flag="0" />
+<vel value="0.5006" flag="0" />
+<psa03 value="1.7195" flag="0" />
+<psa10 value="0.8439" flag="0" />
+<psa30 value="0.0840" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0131" flag="0" />
+<vel value="0.0345" flag="0" />
+<psa03 value="0.0113" flag="0" />
+<psa10 value="0.0075" flag="0" />
+<psa30 value="0.0065" flag="0" />
+</comp>
+</station>
+<station code="MHEZ" name="MHEZ" insttype="L4C-3D" lat="-39.076" lon="174.323" dist="510.808193" source="" netid="" commtype="" loc="" intensity="3.0">
+<comp name="EHE">
+<acc value="0.1452" flag="T" />
+<vel value="0.2904" flag="T" />
+<psa03 value="0.2513" flag="T" />
+<psa10 value="0.3616" flag="T" />
+<psa30 value="0.0543" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.1819" flag="T" />
+<vel value="0.3423" flag="T" />
+<psa03 value="0.2617" flag="T" />
+<psa10 value="0.5297" flag="T" />
+<psa30 value="0.0639" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0504" flag="T" />
+<vel value="0.0404" flag="T" />
+<psa03 value="0.1280" flag="T" />
+<psa10 value="0.0451" flag="T" />
+<psa30 value="0.0085" flag="T" />
+</comp>
+</station>
+<station code="MHGZ" name="MHGZ" insttype="L4C-3D" lat="-39.1526" lon="177.907" dist="705.080822" source="" netid="" commtype="" loc="" intensity="1.8">
+<comp name="EHE">
+<acc value="0.0053" flag="T" />
+<vel value="0.0204" flag="T" />
+<psa03 value="0.0072" flag="T" />
+<psa10 value="0.0111" flag="0" />
+<psa30 value="0.0097" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0040" flag="T" />
+<vel value="0.0550" flag="T" />
+<psa03 value="0.0144" flag="T" />
+<psa10 value="0.0118" flag="0" />
+<psa30 value="0.0101" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0024" flag="T" />
+<vel value="0.0105" flag="T" />
+<psa03 value="0.0050" flag="T" />
+<psa10 value="0.0061" flag="0" />
+<psa30 value="0.0059" flag="0" />
+</comp>
+</station>
+<station code="MKBS" name="MKBS" insttype="FBA-ES-T-BASALT" lat="-41.2259" lon="174.698" dist="348.240948" source="" netid="" commtype="" loc="" intensity="1.8">
+<comp name="HN2">
+<acc value="0.0157" flag="0" />
+<vel value="0.0305" flag="0" />
+<psa03 value="0.0501" flag="0" />
+<psa10 value="0.0313" flag="0" />
+<psa30 value="0.0134" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.0104" flag="0" />
+<vel value="0.0231" flag="0" />
+<psa03 value="0.0212" flag="0" />
+<psa10 value="0.0321" flag="0" />
+<psa30 value="0.0125" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.0276" flag="0" />
+<vel value="0.0568" flag="0" />
+<psa03 value="0.0693" flag="0" />
+<psa10 value="0.0878" flag="0" />
+<psa30 value="0.0311" flag="0" />
+</comp>
+</station>
+<station code="MKRZ" name="MKRZ" insttype="L4C-3D" lat="-38.1384" lon="176.467" dist="700.637807" source="" netid="" commtype="" loc="" intensity="1.8">
+<comp name="EHE">
+<acc value="0.0032" flag="T" />
+<vel value="0.0117" flag="T" />
+<psa03 value="0.0042" flag="T" />
+<psa10 value="0.0080" flag="0" />
+<psa30 value="0.0080" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0030" flag="T" />
+<vel value="0.0551" flag="T" />
+<psa03 value="0.0147" flag="T" />
+<psa10 value="0.0119" flag="0" />
+<psa30 value="0.0104" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0019" flag="T" />
+<vel value="0.0287" flag="T" />
+<psa03 value="0.0075" flag="T" />
+<psa10 value="0.0062" flag="0" />
+<psa30 value="0.0053" flag="0" />
+</comp>
+</station>
+<station code="MLZ" name="MLZ" insttype="CMG-3ESP" lat="-45.3665" lon="168.118" dist="356.258051" source="" netid="" commtype="" loc="" intensity="2.0">
+<comp name="HHE">
+<acc value="0.0213" flag="0" />
+<vel value="0.0617" flag="0" />
+<psa03 value="0.0299" flag="0" />
+<psa10 value="0.0667" flag="0" />
+<psa30 value="0.0398" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0190" flag="0" />
+<vel value="0.0548" flag="0" />
+<psa03 value="0.0433" flag="0" />
+<psa10 value="0.0420" flag="0" />
+<psa30 value="0.0246" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0254" flag="0" />
+<vel value="0.0708" flag="0" />
+<psa03 value="0.0324" flag="0" />
+<psa10 value="0.0571" flag="0" />
+<psa30 value="0.0222" flag="0" />
+</comp>
+</station>
+<station code="MOVZ" name="MOVZ" insttype="L4C-3D" lat="-39.4067" lon="175.753" dist="552.176464" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="EHE">
+<acc value="0.0060" flag="T" />
+<vel value="0.0151" flag="0" />
+<psa03 value="0.0144" flag="0" />
+<psa10 value="0.0179" flag="0" />
+<psa30 value="0.0053" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0074" flag="T" />
+<vel value="0.0241" flag="0" />
+<psa03 value="0.0110" flag="0" />
+<psa10 value="0.0206" flag="0" />
+<psa30 value="0.0068" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0038" flag="T" />
+<vel value="0.0078" flag="0" />
+<psa03 value="0.0059" flag="0" />
+<psa10 value="0.0129" flag="0" />
+<psa30 value="0.0035" flag="0" />
+</comp>
+</station>
+<station code="MRHZ" name="MRHZ" insttype="LE-3DliteMkII" lat="-38.8337" lon="176.417" dist="637.855466" source="" netid="" commtype="" loc="" intensity="3.2">
+<comp name="EHE">
+<acc value="0.0091" flag="T" />
+<vel value="0.0211" flag="T" />
+<psa03 value="0.0406" flag="T" />
+<psa10 value="0.0247" flag="T" />
+<psa30 value="0.0106" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0083" flag="T" />
+<vel value="0.4964" flag="T" />
+<psa03 value="0.1313" flag="T" />
+<psa10 value="0.1074" flag="T" />
+<psa30 value="0.0935" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0032" flag="T" />
+<vel value="0.3123" flag="T" />
+<psa03 value="0.0827" flag="T" />
+<psa10 value="0.0676" flag="T" />
+<psa30 value="0.0589" flag="T" />
+</comp>
+</station>
+<station code="MRZ" name="MRZ" insttype="CMG-3ESP" lat="-40.6605" lon="175.579" dist="445.225289" source="" netid="" commtype="" loc="" intensity="1.4">
+<comp name="HHE">
+<acc value="0.0148" flag="0" />
+<vel value="0.0297" flag="0" />
+<psa03 value="0.0405" flag="0" />
+<psa10 value="0.0344" flag="0" />
+<psa30 value="0.0159" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0085" flag="0" />
+<vel value="0.0236" flag="0" />
+<psa03 value="0.0211" flag="0" />
+<psa10 value="0.0243" flag="0" />
+<psa30 value="0.0127" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0174" flag="0" />
+<vel value="0.0365" flag="0" />
+<psa03 value="0.0699" flag="0" />
+<psa10 value="0.0394" flag="0" />
+<psa30 value="0.0174" flag="0" />
+</comp>
+</station>
+<station code="MSWZ" name="MSWZ" insttype="L4C-3D" lat="-41.4158" lon="175.249" dist="374.937729" source="" netid="" commtype="" loc="" intensity="1.6">
+<comp name="EHE">
+<acc value="0.0125" flag="0" />
+<vel value="0.0325" flag="0" />
+<psa03 value="0.0507" flag="0" />
+<psa10 value="0.0361" flag="0" />
+<psa30 value="0.0174" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0164" flag="0" />
+<vel value="0.0469" flag="0" />
+<psa03 value="0.0397" flag="0" />
+<psa10 value="0.0513" flag="0" />
+<psa30 value="0.0281" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0094" flag="0" />
+<vel value="0.0201" flag="0" />
+<psa03 value="0.0212" flag="0" />
+<psa10 value="0.0275" flag="0" />
+<psa30 value="0.0140" flag="0" />
+</comp>
+</station>
+<station code="MSZ" name="MSZ" insttype="CMG-3ESP" lat="-44.6733" lon="167.926" dist="319.607741" source="" netid="" commtype="" loc="" intensity="1.9">
+<comp name="HHE">
+<acc value="0.0361" flag="0" />
+<vel value="0.0588" flag="0" />
+<psa03 value="0.0711" flag="0" />
+<psa10 value="0.0408" flag="0" />
+<psa30 value="0.0165" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0176" flag="0" />
+<vel value="0.0392" flag="0" />
+<psa03 value="0.0472" flag="0" />
+<psa10 value="0.0235" flag="0" />
+<psa30 value="0.0081" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0295" flag="0" />
+<vel value="0.0671" flag="0" />
+<psa03 value="0.0733" flag="0" />
+<psa10 value="0.0625" flag="0" />
+<psa30 value="0.0210" flag="0" />
+</comp>
+</station>
+<station code="MTHZ" name="MTHZ" insttype="LE-3DliteMkII" lat="-38.8523" lon="176.841" dist="660.983909" source="" netid="" commtype="" loc="" intensity="4.1" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0061" flag="T" />
+<vel value="0.5803" flag="T" />
+<psa03 value="0.1534" flag="T" />
+<psa10 value="0.1255" flag="T" />
+<psa30 value="0.1091" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0073" flag="T" />
+<vel value="1.8380" flag="T" />
+<psa03 value="0.4860" flag="T" />
+<psa10 value="0.3975" flag="T" />
+<psa30 value="0.3458" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0033" flag="T" />
+<vel value="0.4694" flag="T" />
+<psa03 value="0.1241" flag="T" />
+<psa10 value="0.1015" flag="T" />
+<psa30 value="0.0883" flag="T" />
+</comp>
+</station>
+<station code="MTVZ" name="MTVZ" insttype="L4C-3D" lat="-39.3846" lon="175.47" dist="538.282498" source="" netid="" commtype="" loc="" intensity="2.5">
+<comp name="EHE">
+<acc value="0.0366" flag="T" />
+<vel value="0.1476" flag="T" />
+<psa03 value="0.0979" flag="T" />
+<psa10 value="0.1063" flag="0" />
+<psa30 value="0.0274" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0428" flag="T" />
+<vel value="0.0613" flag="T" />
+<psa03 value="0.0658" flag="T" />
+<psa10 value="0.1147" flag="0" />
+<psa30 value="0.0226" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0180" flag="T" />
+<vel value="0.0601" flag="T" />
+<psa03 value="0.0455" flag="T" />
+<psa10 value="0.0641" flag="0" />
+<psa30 value="0.0112" flag="0" />
+</comp>
+</station>
+<station code="MTW" name="MTW" insttype="L4C-3D" lat="-41.1579" lon="175.502" dist="407.939786" source="" netid="" commtype="" loc="" intensity="2.3">
+<comp name="EHE">
+<acc value="0.0171" flag="0" />
+<vel value="0.1176" flag="T" />
+<psa03 value="0.0357" flag="0" />
+<psa10 value="0.0501" flag="0" />
+<psa30 value="0.0257" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0151" flag="0" />
+<vel value="0.0498" flag="T" />
+<psa03 value="0.0318" flag="0" />
+<psa10 value="0.0374" flag="0" />
+<psa30 value="0.0311" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0082" flag="0" />
+<vel value="0.0527" flag="T" />
+<psa03 value="0.0138" flag="0" />
+<psa10 value="0.0262" flag="0" />
+<psa30 value="0.0299" flag="0" />
+</comp>
+</station>
+<station code="MUGZ" name="MUGZ" insttype="LE-3DliteMkII" lat="-38.4771" lon="176.77" dist="687.904522" source="" netid="" commtype="" loc="" intensity="3.4">
+<comp name="EHE">
+<acc value="0.0049" flag="T" />
+<vel value="0.6993" flag="T" />
+<psa03 value="0.1849" flag="T" />
+<psa10 value="0.1512" flag="0" />
+<psa30 value="0.1316" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0046" flag="T" />
+<vel value="0.2183" flag="T" />
+<psa03 value="0.0579" flag="T" />
+<psa10 value="0.0473" flag="0" />
+<psa30 value="0.0412" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0026" flag="T" />
+<vel value="0.1597" flag="T" />
+<psa03 value="0.0419" flag="T" />
+<psa10 value="0.0344" flag="0" />
+<psa30 value="0.0297" flag="T" />
+</comp>
+</station>
+<station code="MWZ" name="MWZ" insttype="CMG-3ESP" lat="-38.334" lon="177.528" dist="743.878731" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="HHE">
+<acc value="0.0041" flag="T" />
+<vel value="0.0134" flag="T" />
+<psa03 value="0.0043" flag="T" />
+<psa10 value="0.0079" flag="0" />
+<psa30 value="0.0063" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0022" flag="T" />
+<vel value="0.0096" flag="T" />
+<psa03 value="0.0023" flag="T" />
+<psa10 value="0.0050" flag="0" />
+<psa30 value="0.0045" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0030" flag="T" />
+<vel value="0.0123" flag="T" />
+<psa03 value="0.0032" flag="T" />
+<psa10 value="0.0085" flag="0" />
+<psa30 value="0.0072" flag="0" />
+</comp>
+</station>
+<station code="MYRZ" name="MYRZ" insttype="L4C-3D" lat="-37.2802" lon="176.241" dist="768.109952" source="" netid="" commtype="" loc="" intensity="3.4" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0096" flag="T" />
+<vel value="0.6142" flag="T" />
+<psa03 value="0.1628" flag="T" />
+<psa10 value="0.1336" flag="T" />
+<psa30 value="0.1151" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0086" flag="T" />
+<vel value="0.0267" flag="T" />
+<psa03 value="0.0112" flag="T" />
+<psa10 value="0.0293" flag="T" />
+<psa30 value="0.0124" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0039" flag="T" />
+<vel value="0.0201" flag="T" />
+<psa03 value="0.0079" flag="T" />
+<psa10 value="0.0057" flag="T" />
+<psa30 value="0.0039" flag="T" />
+</comp>
+</station>
+<station code="NBEZ" name="NBEZ" insttype="2" lat="-39.2679" lon="173.868" dist="473.583476" source="" netid="" commtype="" loc="" intensity="2.4">
+<comp name="EH1">
+<acc value="0.0337" flag="T" />
+<vel value="0.1383" flag="T" />
+<psa03 value="0.0528" flag="0" />
+<psa10 value="0.0911" flag="0" />
+<psa30 value="0.0268" flag="0" />
+</comp>
+<comp name="EH2">
+<acc value="0.0200" flag="T" />
+<vel value="0.0424" flag="T" />
+<psa03 value="0.0314" flag="0" />
+<psa10 value="0.0565" flag="0" />
+<psa30 value="0.0147" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0198" flag="T" />
+<vel value="0.0437" flag="T" />
+<psa03 value="0.0816" flag="0" />
+<psa10 value="0.0600" flag="0" />
+<psa30 value="0.0149" flag="0" />
+</comp>
+</station>
+<station code="NEZ" name="NEZ" insttype="2" lat="-39.2705" lon="174.096" dist="482.417463" source="" netid="" commtype="" loc="" intensity="1.7">
+<comp name="EH1">
+<acc value="0.0142" flag="0" />
+<vel value="0.0327" flag="0" />
+<psa03 value="0.0255" flag="0" />
+<psa10 value="0.0453" flag="0" />
+<psa30 value="0.0130" flag="0" />
+</comp>
+<comp name="EH2">
+<acc value="0.0150" flag="0" />
+<vel value="0.0485" flag="0" />
+<psa03 value="0.0360" flag="0" />
+<psa10 value="0.0371" flag="0" />
+<psa30 value="0.0183" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0115" flag="0" />
+<vel value="0.1156" flag="0" />
+<psa03 value="0.0303" flag="0" />
+<psa10 value="0.0404" flag="0" />
+<psa30 value="0.0214" flag="0" />
+</comp>
+</station>
+<station code="NGRZ" name="NGRZ" insttype="LE-3DliteMkII" lat="-38.1018" lon="176.187" dist="689.400274" source="" netid="" commtype="" loc="" intensity="4.8" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0094" flag="T" />
+<vel value="1.7431" flag="T" />
+<psa03 value="0.4552" flag="T" />
+<psa10 value="0.3739" flag="T" />
+<psa30 value="0.3226" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0123" flag="T" />
+<vel value="4.4428" flag="T" />
+<psa03 value="1.1722" flag="T" />
+<psa10 value="0.9596" flag="T" />
+<psa30 value="0.8334" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0038" flag="T" />
+<vel value="2.0866" flag="T" />
+<psa03 value="0.5481" flag="T" />
+<psa10 value="0.4493" flag="T" />
+<psa30 value="0.3891" flag="T" />
+</comp>
+</station>
+<station code="NGZ" name="NGZ" insttype="L4C-3D" lat="-39.1756" lon="175.601" dist="563.432337" source="" netid="" commtype="" loc="" intensity="2.1">
+<comp name="EHE">
+<acc value="0.0260" flag="T" />
+<vel value="0.0835" flag="T" />
+<psa03 value="0.0348" flag="T" />
+<psa10 value="0.0837" flag="T" />
+<psa30 value="0.0344" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0375" flag="T" />
+<vel value="0.0737" flag="T" />
+<psa03 value="0.0439" flag="T" />
+<psa10 value="0.1357" flag="T" />
+<psa30 value="0.0210" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0110" flag="T" />
+<vel value="0.0250" flag="T" />
+<psa03 value="0.0182" flag="T" />
+<psa10 value="0.0448" flag="T" />
+<psa30 value="0.0074" flag="0" />
+</comp>
+</station>
+<station code="NMEZ" name="NMEZ" insttype="L4C-3D" lat="-39.4132" lon="173.877" dist="459.550913" source="" netid="" commtype="" loc="" intensity="3.1">
+<comp name="EHE">
+<acc value="0.0646" flag="T" />
+<vel value="0.4018" flag="T" />
+<psa03 value="0.1058" flag="T" />
+<psa10 value="0.2331" flag="0" />
+<psa30 value="0.0750" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0417" flag="T" />
+<vel value="0.0686" flag="T" />
+<psa03 value="0.0719" flag="T" />
+<psa10 value="0.1660" flag="0" />
+<psa30 value="0.0238" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0252" flag="T" />
+<vel value="0.0287" flag="T" />
+<psa03 value="0.0619" flag="T" />
+<psa10 value="0.0481" flag="0" />
+<psa30 value="0.0157" flag="0" />
+</comp>
+</station>
+<station code="NMHZ" name="NMHZ" insttype="L4C-3D" lat="-39.0971" lon="176.807" dist="639.369706" source="" netid="" commtype="" loc="" intensity="1.6">
+<comp name="EHE">
+<acc value="0.0174" flag="T" />
+<vel value="0.0471" flag="T" />
+<psa03 value="0.0290" flag="T" />
+<psa10 value="0.0461" flag="0" />
+<psa30 value="0.0168" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0132" flag="T" />
+<vel value="0.0473" flag="T" />
+<psa03 value="0.0249" flag="T" />
+<psa10 value="0.0407" flag="0" />
+<psa30 value="0.0179" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0072" flag="T" />
+<vel value="0.0176" flag="T" />
+<psa03 value="0.0142" flag="T" />
+<psa10 value="0.0252" flag="0" />
+<psa30 value="0.0093" flag="0" />
+</comp>
+</station>
+<station code="NNZ" name="NNZ" insttype="CMG-3ESPC" lat="-41.2171" lon="173.379" dist="268.226813" source="" netid="" commtype="" loc="" intensity="2.1">
+<comp name="HHE">
+<acc value="0.0364" flag="0" />
+<vel value="0.0681" flag="0" />
+<psa03 value="0.0993" flag="0" />
+<psa10 value="0.0793" flag="0" />
+<psa30 value="0.0281" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0222" flag="0" />
+<vel value="0.0542" flag="0" />
+<psa03 value="0.0419" flag="0" />
+<psa10 value="0.1060" flag="0" />
+<psa30 value="0.0348" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0344" flag="0" />
+<vel value="0.0816" flag="0" />
+<psa03 value="0.0686" flag="0" />
+<psa10 value="0.1014" flag="0" />
+<psa30 value="0.0495" flag="0" />
+</comp>
+</station>
+<station code="NTVZ" name="NTVZ" insttype="CMG-3ESPC" lat="-39.0985" lon="175.676" dist="574.168524" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="HHE">
+<acc value="0.0117" flag="T" />
+<vel value="0.0252" flag="0" />
+<psa03 value="0.0233" flag="T" />
+<psa10 value="0.0194" flag="0" />
+<psa30 value="0.0105" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0055" flag="T" />
+<vel value="0.0109" flag="0" />
+<psa03 value="0.0105" flag="T" />
+<psa10 value="0.0206" flag="0" />
+<psa30 value="0.0063" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0089" flag="T" />
+<vel value="0.0192" flag="0" />
+<psa03 value="0.0161" flag="T" />
+<psa10 value="0.0360" flag="0" />
+<psa30 value="0.0080" flag="0" />
+</comp>
+</station>
+<station code="ODZ" name="ODZ" insttype="STS-2" lat="-45.044" lon="170.645" dist="224.261236" source="" netid="" commtype="" loc="" intensity="2.0">
+<comp name="HHE">
+<acc value="0.0460" flag="0" />
+<vel value="0.0791" flag="0" />
+<psa03 value="0.0929" flag="0" />
+<psa10 value="0.1414" flag="0" />
+<psa30 value="0.0378" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0373" flag="0" />
+<vel value="0.0685" flag="0" />
+<psa03 value="0.0762" flag="0" />
+<psa10 value="0.0597" flag="0" />
+<psa30 value="0.0350" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0426" flag="0" />
+<vel value="0.0489" flag="0" />
+<psa03 value="0.1027" flag="0" />
+<psa10 value="0.0997" flag="0" />
+<psa30 value="0.0219" flag="0" />
+</comp>
+</station>
+<station code="OGWZ" name="OGWZ" insttype="L4C-3D" lat="-40.8167" lon="175.17" dist="407.436838" source="" netid="" commtype="" loc="" intensity="1.8">
+<comp name="EHE">
+<acc value="0.0209" flag="0" />
+<vel value="0.0493" flag="0" />
+<psa03 value="0.0556" flag="0" />
+<psa10 value="0.0624" flag="0" />
+<psa30 value="0.0136" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0212" flag="0" />
+<vel value="0.0541" flag="0" />
+<psa03 value="0.0403" flag="0" />
+<psa10 value="0.0688" flag="0" />
+<psa30 value="0.0180" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0112" flag="0" />
+<vel value="0.0295" flag="0" />
+<psa03 value="0.0173" flag="0" />
+<psa10 value="0.0293" flag="0" />
+<psa30 value="0.0179" flag="0" />
+</comp>
+</station>
+<station code="OKCZ" name="OKCZ" insttype="LE-3DliteMkII" lat="-43.7233" lon="173.06" dist="162.218829" source="" netid="" commtype="" loc="" intensity="5.9" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.2033" flag="0" />
+<vel value="9.9067" flag="T" />
+<psa03 value="2.6134" flag="T" />
+<psa10 value="2.1394" flag="T" />
+<psa30 value="1.8577" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.2403" flag="0" />
+<vel value="2.4868" flag="T" />
+<psa03 value="0.6621" flag="T" />
+<psa10 value="0.5401" flag="T" />
+<psa30 value="0.4725" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.1263" flag="0" />
+<vel value="9.1553" flag="T" />
+<psa03 value="2.4201" flag="T" />
+<psa10 value="1.9798" flag="T" />
+<psa30 value="1.7217" flag="T" />
+</comp>
+</station>
+<station code="OMRZ" name="OMRZ" insttype="L4C-3D" lat="-38.1062" lon="176.372" dist="698.522154" source="" netid="" commtype="" loc="" intensity="1.3">
+<comp name="EHE">
+<acc value="0.0031" flag="T" />
+<vel value="0.0323" flag="T" />
+<psa03 value="0.0085" flag="T" />
+<psa10 value="0.0070" flag="0" />
+<psa30 value="0.0101" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0041" flag="T" />
+<vel value="0.0215" flag="T" />
+<psa03 value="0.0056" flag="T" />
+<psa10 value="0.0084" flag="0" />
+<psa30 value="0.0073" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0020" flag="T" />
+<vel value="0.0103" flag="T" />
+<psa03 value="0.0027" flag="T" />
+<psa10 value="0.0077" flag="0" />
+<psa30 value="0.0034" flag="0" />
+</comp>
+</station>
+<station code="OPRZ" name="OPRZ" insttype="CMG-3ESP" lat="-37.8443" lon="176.555" dist="731.493748" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="HHE">
+<acc value="0.0015" flag="T" />
+<vel value="0.0064" flag="0" />
+<psa03 value="0.0015" flag="0" />
+<psa10 value="0.0043" flag="0" />
+<psa30 value="0.0036" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0014" flag="T" />
+<vel value="0.0037" flag="0" />
+<psa03 value="0.0015" flag="0" />
+<psa10 value="0.0039" flag="0" />
+<psa30 value="0.0021" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0015" flag="T" />
+<vel value="0.0059" flag="0" />
+<psa03 value="0.0016" flag="0" />
+<psa10 value="0.0040" flag="0" />
+<psa30 value="0.0049" flag="0" />
+</comp>
+</station>
+<station code="OPSS" name="OPSS" insttype="CUSP3D" lat="-39.45" lon="173.855" dist="455.048763" source="" netid="" commtype="" loc="" intensity="2.4">
+<comp name="HN2">
+<acc value="0.0849" flag="T" />
+<vel value="0.1241" flag="0" />
+<psa03 value="0.1178" flag="T" />
+<psa10 value="0.2530" flag="0" />
+<psa30 value="0.0510" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.0265" flag="T" />
+<vel value="0.0480" flag="0" />
+<psa03 value="0.0578" flag="T" />
+<psa10 value="0.0846" flag="0" />
+<psa30 value="0.0197" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.0781" flag="T" />
+<vel value="0.1268" flag="0" />
+<psa03 value="0.1138" flag="T" />
+<psa10 value="0.2150" flag="0" />
+<psa30 value="0.0427" flag="0" />
+</comp>
+</station>
+<station code="OPZ" name="OPZ" insttype="CMG-3ESP" lat="-45.8844" lon="170.598" dist="316.707492" source="" netid="" commtype="" loc="" intensity="2.1">
+<comp name="HHE">
+<acc value="0.0551" flag="0" />
+<vel value="0.0881" flag="0" />
+<psa03 value="0.0746" flag="0" />
+<psa10 value="0.1424" flag="0" />
+<psa30 value="0.0207" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0452" flag="0" />
+<vel value="0.1061" flag="0" />
+<psa03 value="0.0513" flag="0" />
+<psa10 value="0.0889" flag="0" />
+<psa30 value="0.0264" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0434" flag="0" />
+<vel value="0.0582" flag="0" />
+<psa03 value="0.0742" flag="0" />
+<psa10 value="0.1060" flag="0" />
+<psa30 value="0.0250" flag="0" />
+</comp>
+</station>
+<station code="OTVZ" name="OTVZ" insttype="CMG-3ESPC" lat="-39.1631" lon="175.665" dist="567.979101" source="" netid="" commtype="" loc="" intensity="1.9">
+<comp name="HHE">
+<acc value="0.0219" flag="T" />
+<vel value="0.0450" flag="T" />
+<psa03 value="0.0265" flag="T" />
+<psa10 value="0.0582" flag="0" />
+<psa30 value="0.0192" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0111" flag="T" />
+<vel value="0.0243" flag="T" />
+<psa03 value="0.0189" flag="T" />
+<psa10 value="0.0385" flag="0" />
+<psa30 value="0.0109" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0231" flag="T" />
+<vel value="0.0594" flag="T" />
+<psa03 value="0.0300" flag="T" />
+<psa10 value="0.1008" flag="0" />
+<psa30 value="0.0192" flag="0" />
+</comp>
+</station>
+<station code="OWQX" name="OWQX" insttype="LE-3DliteMkII" lat="-41.3451" lon="174.746" dist="343.752995" source="" netid="" commtype="" loc="" intensity="3.8" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0158" flag="0" />
+<vel value="0.2496" flag="T" />
+<psa03 value="0.0665" flag="T" />
+<psa10 value="0.0590" flag="0" />
+<psa30 value="0.0475" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0176" flag="0" />
+<vel value="1.2884" flag="T" />
+<psa03 value="0.3399" flag="T" />
+<psa10 value="0.2783" flag="0" />
+<psa30 value="0.2416" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0166" flag="0" />
+<vel value="0.8115" flag="T" />
+<psa03 value="0.2150" flag="T" />
+<psa10 value="0.1757" flag="0" />
+<psa30 value="0.1531" flag="T" />
+</comp>
+</station>
+<station code="OXZ" name="OXZ" insttype="CMG-3ESPC" lat="-43.3259" lon="172.038" dist="68.948656" source="" netid="" commtype="" loc="" intensity="3.5">
+<comp name="HHE">
+<acc value="0.5477" flag="0" />
+<vel value="0.5574" flag="0" />
+<psa03 value="1.4110" flag="0" />
+<psa10 value="1.0393" flag="0" />
+<psa30 value="0.1389" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.7865" flag="0" />
+<vel value="0.7076" flag="0" />
+<psa03 value="1.5128" flag="0" />
+<psa10 value="0.5612" flag="0" />
+<psa30 value="0.0961" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.6439" flag="0" />
+<vel value="0.7769" flag="0" />
+<psa03 value="0.9387" flag="0" />
+<psa10 value="0.9673" flag="0" />
+<psa30 value="0.1218" flag="0" />
+</comp>
+</station>
+<station code="PAWZ" name="PAWZ" insttype="L4C-3D" lat="-41.3816" lon="175.427" dist="389.689478" source="" netid="" commtype="" loc="" intensity="1.4">
+<comp name="EHE">
+<acc value="0.0112" flag="0" />
+<vel value="0.0264" flag="0" />
+<psa03 value="0.0517" flag="0" />
+<psa10 value="0.0335" flag="0" />
+<psa30 value="0.0130" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0157" flag="0" />
+<vel value="0.0378" flag="0" />
+<psa03 value="0.0304" flag="0" />
+<psa10 value="0.0526" flag="0" />
+<psa30 value="0.0173" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0079" flag="0" />
+<vel value="0.0210" flag="0" />
+<psa03 value="0.0109" flag="0" />
+<psa10 value="0.0220" flag="0" />
+<psa30 value="0.0120" flag="0" />
+</comp>
+</station>
+<station code="PKE" name="PKE" insttype="L4C-3D" lat="-39.1939" lon="173.987" dist="485.559701" source="" netid="" commtype="" loc="" intensity="2.8">
+<comp name="EHE">
+<acc value="0.0784" flag="T" />
+<vel value="0.1730" flag="T" />
+<psa03 value="0.1824" flag="T" />
+<psa10 value="0.1308" flag="0" />
+<psa30 value="0.0337" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0899" flag="T" />
+<vel value="0.2546" flag="T" />
+<psa03 value="0.1980" flag="T" />
+<psa10 value="0.1556" flag="0" />
+<psa30 value="0.0472" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.1007" flag="T" />
+<vel value="0.0804" flag="T" />
+<psa03 value="0.2615" flag="T" />
+<psa10 value="0.0617" flag="0" />
+<psa30 value="0.0153" flag="0" />
+</comp>
+</station>
+<station code="PKIS" name="PKIS" insttype="FBA-23-DECK" lat="-44.191" lon="170.147" dist="152.367893" source="" netid="" commtype="" loc="" intensity="2.9">
+<comp name="HN2">
+<acc value="0.2899" flag="0" />
+<vel value="0.3045" flag="0" />
+<psa03 value="0.6776" flag="0" />
+<psa10 value="0.3905" flag="0" />
+<psa30 value="0.0682" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.3041" flag="0" />
+<vel value="0.2387" flag="0" />
+<psa03 value="0.5428" flag="0" />
+<psa10 value="0.2975" flag="0" />
+<psa30 value="0.0727" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.2553" flag="0" />
+<vel value="0.2390" flag="0" />
+<psa03 value="0.5679" flag="0" />
+<psa10 value="0.2732" flag="0" />
+<psa30 value="0.0766" flag="0" />
+</comp>
+</station>
+<station code="PLWZ" name="PLWZ" insttype="L4C-3D" lat="-41.5692" lon="175.255" dist="367.045039" source="" netid="" commtype="" loc="" intensity="2.3">
+<comp name="EHE">
+<acc value="0.0133" flag="0" />
+<vel value="0.1126" flag="0" />
+<psa03 value="0.0295" flag="0" />
+<psa10 value="0.0414" flag="0" />
+<psa30 value="0.0209" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0129" flag="0" />
+<vel value="0.0403" flag="0" />
+<psa03 value="0.0219" flag="0" />
+<psa10 value="0.0417" flag="0" />
+<psa30 value="0.0271" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0066" flag="0" />
+<vel value="0.0196" flag="0" />
+<psa03 value="0.0107" flag="0" />
+<psa10 value="0.0242" flag="0" />
+<psa30 value="0.0104" flag="0" />
+</comp>
+</station>
+<station code="PNHZ" name="PNHZ" insttype="L4C-3D" lat="-39.9134" lon="176.2" dist="539.033047" source="" netid="" commtype="" loc="" intensity="1.7">
+<comp name="EHE">
+<acc value="0.0084" flag="T" />
+<vel value="0.0273" flag="T" />
+<psa03 value="0.0108" flag="0" />
+<psa10 value="0.0243" flag="0" />
+<psa30 value="0.0112" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0128" flag="T" />
+<vel value="0.0498" flag="T" />
+<psa03 value="0.0142" flag="0" />
+<psa10 value="0.0291" flag="0" />
+<psa30 value="0.0097" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0064" flag="T" />
+<vel value="0.0175" flag="T" />
+<psa03 value="0.0072" flag="0" />
+<psa10 value="0.0241" flag="0" />
+<psa30 value="0.0080" flag="0" />
+</comp>
+</station>
+<station code="POWZ" name="POWZ" insttype="L4C-3D" lat="-40.3917" lon="175.768" dist="476.448019" source="" netid="" commtype="" loc="" intensity="1.8">
+<comp name="EHE">
+<acc value="0.0157" flag="T" />
+<vel value="0.0542" flag="0" />
+<psa03 value="0.0280" flag="0" />
+<psa10 value="0.0540" flag="0" />
+<psa30 value="0.0198" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0176" flag="T" />
+<vel value="0.0313" flag="0" />
+<psa03 value="0.0301" flag="0" />
+<psa10 value="0.0460" flag="0" />
+<psa30 value="0.0172" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0137" flag="T" />
+<vel value="0.0321" flag="0" />
+<psa03 value="0.0177" flag="0" />
+<psa10 value="0.0444" flag="0" />
+<psa30 value="0.0145" flag="0" />
+</comp>
+</station>
+<station code="PREZ" name="PREZ" insttype="LE-3DliteMkII" lat="-39.3421" lon="174.159" dist="478.088290" source="" netid="" commtype="" loc="" intensity="6.2" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0476" flag="T" />
+<vel value="11.6574" flag="T" />
+<psa03 value="3.0805" flag="T" />
+<psa10 value="2.5202" flag="T" />
+<psa30 value="2.1913" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0447" flag="T" />
+<vel value="6.0662" flag="T" />
+<psa03 value="1.6035" flag="T" />
+<psa10 value="1.3117" flag="T" />
+<psa30 value="1.1405" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0460" flag="T" />
+<vel value="20.7858" flag="T" />
+<psa03 value="5.4978" flag="T" />
+<psa10 value="4.4964" flag="T" />
+<psa30 value="3.9124" flag="T" />
+</comp>
+</station>
+<station code="PRGZ" name="PRGZ" insttype="L4C-3D" lat="-38.9226" lon="177.883" dist="720.258859" source="" netid="" commtype="" loc="" intensity="1.6">
+<comp name="EHE">
+<acc value="0.0056" flag="T" />
+<vel value="0.0436" flag="T" />
+<psa03 value="0.0148" flag="T" />
+<psa10 value="0.0095" flag="0" />
+<psa30 value="0.0123" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0040" flag="T" />
+<vel value="0.0302" flag="T" />
+<psa03 value="0.0104" flag="T" />
+<psa10 value="0.0105" flag="0" />
+<psa30 value="0.0106" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0021" flag="T" />
+<vel value="0.0373" flag="T" />
+<psa03 value="0.0099" flag="T" />
+<psa10 value="0.0081" flag="0" />
+<psa30 value="0.0070" flag="0" />
+</comp>
+</station>
+<station code="PRHZ" name="PRHZ" insttype="L4C-3D" lat="-40.2664" lon="176.635" dist="542.867933" source="" netid="" commtype="" loc="" intensity="1.9">
+<comp name="EHE">
+<acc value="0.0121" flag="T" />
+<vel value="0.0458" flag="T" />
+<psa03 value="0.0218" flag="0" />
+<psa10 value="0.0467" flag="0" />
+<psa30 value="0.0204" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0126" flag="T" />
+<vel value="0.0640" flag="T" />
+<psa03 value="0.0189" flag="0" />
+<psa10 value="0.0433" flag="0" />
+<psa30 value="0.0206" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0058" flag="T" />
+<vel value="0.0194" flag="T" />
+<psa03 value="0.0083" flag="0" />
+<psa10 value="0.0219" flag="0" />
+<psa30 value="0.0111" flag="0" />
+</comp>
+</station>
+<station code="PRRZ" name="PRRZ" insttype="L4C-3D" lat="-38.4971" lon="176.393" dist="665.223069" source="" netid="" commtype="" loc="" intensity="1.8">
+<comp name="EHE">
+<acc value="0.0046" flag="T" />
+<vel value="0.0379" flag="T" />
+<psa03 value="0.0100" flag="T" />
+<psa10 value="0.0138" flag="0" />
+<psa30 value="0.0101" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0056" flag="T" />
+<vel value="0.0537" flag="T" />
+<psa03 value="0.0141" flag="T" />
+<psa10 value="0.0209" flag="0" />
+<psa30 value="0.0100" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0023" flag="T" />
+<vel value="0.0186" flag="T" />
+<psa03 value="0.0049" flag="T" />
+<psa10 value="0.0072" flag="0" />
+<psa30 value="0.0036" flag="0" />
+</comp>
+</station>
+<station code="PRWZ" name="PRWZ" insttype="L4C-3D" lat="-40.5547" lon="175.971" dist="478.637320" source="" netid="" commtype="" loc="" intensity="1.8">
+<comp name="EHE">
+<acc value="0.0148" flag="T" />
+<vel value="0.0566" flag="T" />
+<psa03 value="0.0395" flag="0" />
+<psa10 value="0.0628" flag="0" />
+<psa30 value="0.0286" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0173" flag="T" />
+<vel value="0.0427" flag="T" />
+<psa03 value="0.0433" flag="0" />
+<psa10 value="0.0451" flag="0" />
+<psa30 value="0.0266" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0145" flag="T" />
+<vel value="0.0542" flag="T" />
+<psa03 value="0.0222" flag="0" />
+<psa10 value="0.0462" flag="0" />
+<psa30 value="0.0274" flag="0" />
+</comp>
+</station>
+<station code="PYZ" name="PYZ" insttype="CMG-3ESP" lat="-46.1663" lon="166.681" dist="498.381662" source="" netid="" commtype="" loc="" intensity="1.2">
+<comp name="HHE">
+<acc value="0.0116" flag="T" />
+<vel value="0.0274" flag="0" />
+<psa03 value="0.0286" flag="0" />
+<psa10 value="0.0310" flag="0" />
+<psa30 value="0.0127" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0128" flag="T" />
+<vel value="0.0234" flag="0" />
+<psa03 value="0.0165" flag="0" />
+<psa10 value="0.0234" flag="0" />
+<psa30 value="0.0200" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0119" flag="T" />
+<vel value="0.0292" flag="0" />
+<psa03 value="0.0220" flag="0" />
+<psa10 value="0.0308" flag="0" />
+<psa30 value="0.0127" flag="0" />
+</comp>
+</station>
+<station code="QRZ" name="QRZ" insttype="STS-2" lat="-40.8255" lon="172.529" dist="268.453606" source="" netid="" commtype="" loc="" intensity="2.4">
+<comp name="HHE">
+<acc value="0.1101" flag="0" />
+<vel value="0.1419" flag="0" />
+<psa03 value="0.2718" flag="0" />
+<psa10 value="0.3991" flag="0" />
+<psa30 value="0.0267" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0902" flag="0" />
+<vel value="0.1203" flag="0" />
+<psa03 value="0.1347" flag="0" />
+<psa10 value="0.1632" flag="0" />
+<psa30 value="0.0350" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0756" flag="0" />
+<vel value="0.0879" flag="0" />
+<psa03 value="0.1502" flag="0" />
+<psa10 value="0.1693" flag="0" />
+<psa30 value="0.0181" flag="0" />
+</comp>
+</station>
+<station code="RACZ" name="RACZ" insttype="LE-3DliteMkII" lat="-43.7271" lon="172.14" dist="101.785524" source="" netid="" commtype="" loc="" intensity="4.3">
+<comp name="EHE">
+<acc value="0.4994" flag="0" />
+<vel value="2.8422" flag="0" />
+<psa03 value="0.8126" flag="0" />
+<psa10 value="1.0281" flag="0" />
+<psa30 value="0.5354" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.3219" flag="0" />
+<vel value="2.3766" flag="0" />
+<psa03 value="0.6946" flag="0" />
+<psa10 value="0.6963" flag="0" />
+<psa30 value="0.4477" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.4929" flag="0" />
+<vel value="1.3579" flag="0" />
+<psa03 value="1.0226" flag="0" />
+<psa10 value="0.8672" flag="0" />
+<psa30 value="0.2547" flag="0" />
+</comp>
+</station>
+<station code="RAGZ" name="RAGZ" insttype="LE-3DliteMkII" lat="-38.4956" lon="177.415" dist="724.058985" source="" netid="" commtype="" loc="" intensity="4.3" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0053" flag="T" />
+<vel value="0.7238" flag="T" />
+<psa03 value="0.1912" flag="T" />
+<psa10 value="0.1565" flag="T" />
+<psa30 value="0.1360" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0078" flag="T" />
+<vel value="2.5642" flag="T" />
+<psa03 value="0.6769" flag="T" />
+<psa10 value="0.5540" flag="T" />
+<psa30 value="0.4813" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0033" flag="T" />
+<vel value="0.5003" flag="T" />
+<psa03 value="0.1301" flag="T" />
+<psa10 value="0.1070" flag="T" />
+<psa30 value="0.0920" flag="T" />
+</comp>
+</station>
+<station code="RAHZ" name="RAHZ" insttype="L4C-3D" lat="-38.9162" lon="177.086" dist="670.634246" source="" netid="" commtype="" loc="" intensity="1.5">
+<comp name="EHE">
+<acc value="0.0093" flag="T" />
+<vel value="0.0225" flag="T" />
+<psa03 value="0.0380" flag="T" />
+<psa10 value="0.0251" flag="0" />
+<psa30 value="0.0109" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0068" flag="T" />
+<vel value="0.0395" flag="T" />
+<psa03 value="0.0229" flag="T" />
+<psa10 value="0.0209" flag="0" />
+<psa30 value="0.0126" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0039" flag="T" />
+<vel value="0.0120" flag="T" />
+<psa03 value="0.0083" flag="T" />
+<psa10 value="0.0089" flag="0" />
+<psa30 value="0.0066" flag="0" />
+</comp>
+</station>
+<station code="RATZ" name="RATZ" insttype="CMG-3ESPC" lat="-38.8665" lon="175.772" dist="599.579558" source="" netid="" commtype="" loc="" intensity="2.2">
+<comp name="HHE">
+<acc value="0.0438" flag="T" />
+<vel value="0.1018" flag="T" />
+<psa03 value="0.0524" flag="T" />
+<psa10 value="0.1247" flag="T" />
+<psa30 value="0.0313" flag="T" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0138" flag="T" />
+<vel value="0.0340" flag="T" />
+<psa03 value="0.0144" flag="T" />
+<psa10 value="0.0523" flag="T" />
+<psa30 value="0.0141" flag="T" />
+</comp>
+<comp name="HHN">
+<acc value="0.0355" flag="T" />
+<vel value="0.0892" flag="T" />
+<psa03 value="0.0385" flag="T" />
+<psa10 value="0.1101" flag="T" />
+<psa30 value="0.0422" flag="T" />
+</comp>
+</station>
+<station code="RIGZ" name="RIGZ" insttype="LE-3DliteMkII" lat="-38.7058" lon="177.762" dist="728.882290" source="" netid="" commtype="" loc="" intensity="4.2" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0056" flag="T" />
+<vel value="1.6738" flag="T" />
+<psa03 value="0.4420" flag="T" />
+<psa10 value="0.3617" flag="T" />
+<psa30 value="0.3143" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0051" flag="T" />
+<vel value="2.3361" flag="T" />
+<psa03 value="0.6176" flag="T" />
+<psa10 value="0.5052" flag="T" />
+<psa30 value="0.4395" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0038" flag="T" />
+<vel value="3.8066" flag="T" />
+<psa03 value="1.0058" flag="T" />
+<psa10 value="0.8229" flag="T" />
+<psa30 value="0.7154" flag="T" />
+</comp>
+</station>
+<station code="RITZ" name="RITZ" insttype="LE-3DliteMkII" lat="-38.9772" lon="175.858" dist="594.531697" source="" netid="" commtype="" loc="" intensity="6.0" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0303" flag="T" />
+<vel value="10.3470" flag="T" />
+<psa03 value="2.7341" flag="T" />
+<psa10 value="2.2369" flag="T" />
+<psa30 value="1.9448" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0314" flag="T" />
+<vel value="0.3154" flag="T" />
+<psa03 value="0.0842" flag="T" />
+<psa10 value="0.0923" flag="T" />
+<psa30 value="0.0602" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0078" flag="T" />
+<vel value="1.2499" flag="T" />
+<psa03 value="0.3297" flag="T" />
+<psa10 value="0.2699" flag="T" />
+<psa30 value="0.2344" flag="T" />
+</comp>
+</station>
+<station code="RPZ" name="RPZ" insttype="CMG-3TB" lat="-43.7146" lon="171.054" dist="73.033106" source="" netid="" commtype="" loc="" intensity="2.9">
+<comp name="HH1">
+<acc value="0.2724" flag="0" />
+<vel value="0.2383" flag="0" />
+<psa03 value="0.5741" flag="0" />
+<psa10 value="0.5097" flag="0" />
+<psa30 value="0.0709" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.2171" flag="0" />
+<vel value="0.2410" flag="0" />
+<psa03 value="0.7094" flag="0" />
+<psa10 value="0.5647" flag="0" />
+<psa30 value="0.0653" flag="0" />
+</comp>
+<comp name="HH2">
+<acc value="0.3892" flag="0" />
+<vel value="0.2934" flag="0" />
+<psa03 value="0.6268" flag="0" />
+<psa10 value="0.2815" flag="0" />
+<psa30 value="0.1245" flag="0" />
+</comp>
+</station>
+<station code="RRRZ" name="RRRZ" insttype="L4C-3D" lat="-38.339" lon="176.515" dist="685.591688" source="" netid="" commtype="" loc="" intensity="1.6">
+<comp name="EHE">
+<acc value="0.0076" flag="T" />
+<vel value="0.0192" flag="T" />
+<psa03 value="0.0109" flag="T" />
+<psa10 value="0.0202" flag="0" />
+<psa30 value="0.0046" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0197" flag="T" />
+<vel value="0.0450" flag="T" />
+<psa03 value="0.0120" flag="T" />
+<psa10 value="0.0177" flag="0" />
+<psa30 value="0.0084" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0068" flag="T" />
+<vel value="0.0198" flag="T" />
+<psa03 value="0.0113" flag="T" />
+<psa10 value="0.0102" flag="0" />
+<psa30 value="0.0037" flag="0" />
+</comp>
+</station>
+<station code="RTZ" name="RTZ" insttype="CMG-3ESPC" lat="-38.6154" lon="176.981" dist="688.554865" source="" netid="" commtype="" loc="" intensity="1.1">
+<comp name="HHE">
+<acc value="0.0061" flag="T" />
+<vel value="0.0257" flag="T" />
+<psa03 value="0.0110" flag="T" />
+<psa10 value="0.0200" flag="0" />
+<psa30 value="0.0104" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0041" flag="T" />
+<vel value="0.0133" flag="T" />
+<psa03 value="0.0045" flag="T" />
+<psa10 value="0.0114" flag="0" />
+<psa30 value="0.0059" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0054" flag="T" />
+<vel value="0.0115" flag="T" />
+<psa03 value="0.0118" flag="T" />
+<psa10 value="0.0168" flag="0" />
+<psa30 value="0.0061" flag="0" />
+</comp>
+</station>
+<station code="RUGZ" name="RUGZ" insttype="LE-3DliteMkII" lat="-37.9651" lon="177.677" dist="782.939449" source="" netid="" commtype="" loc="" intensity="3.4" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0027" flag="T" />
+<vel value="0.3962" flag="T" />
+<psa03 value="0.1048" flag="T" />
+<psa10 value="0.0857" flag="T" />
+<psa30 value="0.0746" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0022" flag="T" />
+<vel value="0.7042" flag="T" />
+<psa03 value="0.1862" flag="T" />
+<psa10 value="0.1523" flag="T" />
+<psa30 value="0.1325" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0012" flag="T" />
+<vel value="0.3408" flag="T" />
+<psa03 value="0.0901" flag="T" />
+<psa10 value="0.0737" flag="T" />
+<psa30 value="0.0641" flag="T" />
+</comp>
+</station>
+<station code="RVAZ" name="RVAZ" insttype="2" lat="-36.77" lon="174.579" dist="753.135413" source="" netid="" commtype="" loc="" intensity="1.2">
+<comp name="EH1">
+<acc value="0.0020" flag="T" />
+<vel value="0.0092" flag="T" />
+<psa03 value="0.0029" flag="T" />
+<psa10 value="0.0042" flag="0" />
+<psa30 value="0.0041" flag="0" />
+</comp>
+<comp name="EH2">
+<acc value="0.0024" flag="T" />
+<vel value="0.0302" flag="T" />
+<psa03 value="0.0080" flag="T" />
+<psa10 value="0.0066" flag="0" />
+<psa30 value="0.0065" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0033" flag="T" />
+<vel value="0.0082" flag="T" />
+<psa03 value="0.0035" flag="T" />
+<psa10 value="0.0115" flag="0" />
+<psa30 value="0.0036" flag="0" />
+</comp>
+</station>
+<station code="SACS" name="SACS" insttype="CUSP3D" lat="-43.5067" lon="172.616" dist="119.666675" source="" netid="" commtype="" loc="" intensity="3.5">
+<comp name="HN2">
+<acc value="0.4200" flag="0" />
+<vel value="0.7258" flag="0" />
+<psa03 value="1.1064" flag="0" />
+<psa10 value="0.8351" flag="0" />
+<psa30 value="0.3020" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.2253" flag="0" />
+<vel value="0.3330" flag="0" />
+<psa03 value="0.2644" flag="0" />
+<psa10 value="0.4715" flag="0" />
+<psa30 value="0.1440" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.5362" flag="0" />
+<vel value="0.6958" flag="0" />
+<psa03 value="1.2046" flag="0" />
+<psa10 value="1.1127" flag="0" />
+<psa30 value="0.3917" flag="0" />
+</comp>
+</station>
+<station code="SJFS" name="SJFS" insttype="FBA-ES-T-DECK" lat="-42.3346" lon="172.18" dist="109.287345" source="" netid="" commtype="" loc="" intensity="3.2">
+<comp name="HN2">
+<acc value="0.5340" flag="0" />
+<vel value="0.4516" flag="0" />
+<psa03 value="0.9927" flag="0" />
+<psa10 value="0.6312" flag="0" />
+<psa30 value="0.0646" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.2181" flag="0" />
+<vel value="0.1984" flag="0" />
+<psa03 value="0.6003" flag="0" />
+<psa10 value="0.3885" flag="0" />
+<psa30 value="0.0484" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.4627" flag="0" />
+<vel value="0.3460" flag="0" />
+<psa03 value="1.5071" flag="0" />
+<psa10 value="0.4253" flag="0" />
+<psa30 value="0.0560" flag="0" />
+</comp>
+</station>
+<station code="SNGZ" name="SNGZ" insttype="LE-3DliteMkII" lat="-38.7815" lon="177.34" dist="696.780984" source="" netid="" commtype="" loc="" intensity="4.3" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0072" flag="T" />
+<vel value="2.7444" flag="T" />
+<psa03 value="0.7252" flag="T" />
+<psa10 value="0.5933" flag="T" />
+<psa30 value="0.5159" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0086" flag="T" />
+<vel value="0.1459" flag="T" />
+<psa03 value="0.0384" flag="T" />
+<psa10 value="0.0315" flag="T" />
+<psa30 value="0.0272" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0047" flag="T" />
+<vel value="0.7131" flag="T" />
+<psa03 value="0.1885" flag="T" />
+<psa10 value="0.1542" flag="T" />
+<psa30 value="0.1341" flag="T" />
+</comp>
+</station>
+<station code="SOMS" name="SOMS" insttype="FBA-ES-T-BASALT" lat="-41.2575" lon="174.865" dist="357.480400" source="" netid="" commtype="" loc="" intensity="1.4">
+<comp name="HN2">
+<acc value="0.0153" flag="0" />
+<vel value="0.0330" flag="0" />
+<psa03 value="0.0325" flag="0" />
+<psa10 value="0.0476" flag="0" />
+<psa30 value="0.0192" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.0130" flag="0" />
+<vel value="0.0254" flag="0" />
+<psa03 value="0.0167" flag="0" />
+<psa10 value="0.0396" flag="0" />
+<psa30 value="0.0185" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.0156" flag="0" />
+<vel value="0.0382" flag="0" />
+<psa03 value="0.0324" flag="0" />
+<psa10 value="0.0446" flag="0" />
+<psa30 value="0.0198" flag="0" />
+</comp>
+</station>
+<station code="SPRS" name="SPRS" insttype="FBA-ES-T-BASALT" lat="-43.3368" lon="171.93" dist="61.723902" source="" netid="" commtype="" loc="" intensity="3.8">
+<comp name="HN2">
+<acc value="0.7391" flag="0" />
+<vel value="0.9120" flag="0" />
+<psa03 value="1.8137" flag="0" />
+<psa10 value="1.5050" flag="0" />
+<psa30 value="0.2590" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.8268" flag="0" />
+<vel value="0.5103" flag="0" />
+<psa03 value="1.1065" flag="0" />
+<psa10 value="0.9207" flag="0" />
+<psa30 value="0.0952" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.9996" flag="0" />
+<vel value="1.2669" flag="0" />
+<psa03 value="2.6805" flag="0" />
+<psa10 value="1.3860" flag="0" />
+<psa30 value="0.1830" flag="0" />
+</comp>
+</station>
+<station code="SYZ" name="SYZ" insttype="CMG-3ESP" lat="-46.5369" lon="169.139" dist="419.354418" source="" netid="" commtype="" loc="" intensity="2.0">
+<comp name="HHE">
+<acc value="0.0177" flag="0" />
+<vel value="0.0693" flag="0" />
+<psa03 value="0.0205" flag="0" />
+<psa10 value="0.0500" flag="0" />
+<psa30 value="0.0334" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0193" flag="0" />
+<vel value="0.0488" flag="0" />
+<psa03 value="0.0230" flag="0" />
+<psa10 value="0.0734" flag="0" />
+<psa30 value="0.0196" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0280" flag="0" />
+<vel value="0.0575" flag="0" />
+<psa03 value="0.0296" flag="0" />
+<psa10 value="0.0843" flag="0" />
+<psa30 value="0.0276" flag="0" />
+</comp>
+</station>
+<station code="TARZ" name="TARZ" insttype="L4C-3D" lat="-38.2356" lon="176.506" dist="694.141296" source="" netid="" commtype="" loc="" intensity="1.4">
+<comp name="EHE">
+<acc value="0.0036" flag="T" />
+<vel value="0.0141" flag="T" />
+<psa03 value="0.0046" flag="T" />
+<psa10 value="0.0072" flag="0" />
+<psa30 value="0.0065" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0036" flag="T" />
+<vel value="0.0367" flag="T" />
+<psa03 value="0.0097" flag="T" />
+<psa10 value="0.0079" flag="0" />
+<psa30 value="0.0119" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0031" flag="T" />
+<vel value="0.0380" flag="T" />
+<psa03 value="0.0100" flag="T" />
+<psa10 value="0.0082" flag="0" />
+<psa30 value="0.0071" flag="0" />
+</comp>
+</station>
+<station code="TCW" name="TCW" insttype="L4C-3D" lat="-41.2104" lon="174.276" dist="321.734934" source="" netid="" commtype="" loc="" intensity="1.8">
+<comp name="EHE">
+<acc value="0.0415" flag="0" />
+<vel value="0.0532" flag="0" />
+<psa03 value="0.1842" flag="0" />
+<psa10 value="0.0657" flag="0" />
+<psa30 value="0.0136" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0298" flag="0" />
+<vel value="0.0566" flag="0" />
+<psa03 value="0.1054" flag="0" />
+<psa10 value="0.0677" flag="0" />
+<psa30 value="0.0231" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0165" flag="0" />
+<vel value="0.0241" flag="0" />
+<psa03 value="0.0340" flag="0" />
+<psa10 value="0.0473" flag="0" />
+<psa30 value="0.0092" flag="0" />
+</comp>
+</station>
+<station code="TGRZ" name="TGRZ" insttype="L4C-3D" lat="-37.7288" lon="176.261" dist="727.183238" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="EHE">
+<acc value="0.0046" flag="T" />
+<vel value="0.0168" flag="T" />
+<psa03 value="0.0055" flag="T" />
+<psa10 value="0.0199" flag="0" />
+<psa30 value="0.0043" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0045" flag="T" />
+<vel value="0.0140" flag="T" />
+<psa03 value="0.0048" flag="T" />
+<psa10 value="0.0160" flag="0" />
+<psa30 value="0.0056" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0029" flag="T" />
+<vel value="0.0169" flag="T" />
+<psa03 value="0.0045" flag="T" />
+<psa10 value="0.0100" flag="0" />
+<psa30 value="0.0032" flag="0" />
+</comp>
+</station>
+<station code="THLX" name="THLX" insttype="LE-3DliteMkII" lat="-41.2741" lon="174.771" dist="350.003289" source="" netid="" commtype="" loc="" intensity="4.2" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0281" flag="0" />
+<vel value="1.9485" flag="T" />
+<psa03 value="0.5146" flag="T" />
+<psa10 value="0.4212" flag="0" />
+<psa30 value="0.3661" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0316" flag="0" />
+<vel value="2.4499" flag="T" />
+<psa03 value="0.6463" flag="T" />
+<psa10 value="0.5291" flag="0" />
+<psa30 value="0.4595" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0179" flag="0" />
+<vel value="1.0882" flag="T" />
+<psa03 value="0.2871" flag="T" />
+<psa10 value="0.2350" flag="0" />
+<psa30 value="0.2041" flag="T" />
+</comp>
+</station>
+<station code="THZ" name="THZ" insttype="CMG-3ESP" lat="-41.7625" lon="172.905" dist="196.593345" source="" netid="" commtype="" loc="" intensity="2.5">
+<comp name="HHE">
+<acc value="0.0535" flag="0" />
+<vel value="0.0856" flag="0" />
+<psa03 value="0.1573" flag="0" />
+<psa10 value="0.1854" flag="0" />
+<psa30 value="0.0316" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0924" flag="0" />
+<vel value="0.1215" flag="0" />
+<psa03 value="0.1758" flag="0" />
+<psa10 value="0.1907" flag="0" />
+<psa30 value="0.0307" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.1218" flag="0" />
+<vel value="0.1479" flag="0" />
+<psa03 value="0.2078" flag="0" />
+<psa10 value="0.2002" flag="0" />
+<psa30 value="0.0376" flag="0" />
+</comp>
+</station>
+<station code="TIWZ" name="TIWZ" insttype="L4C-3D" lat="-40.776" lon="175.886" dist="458.361971" source="" netid="" commtype="" loc="" intensity="1.4">
+<comp name="EHE">
+<acc value="0.0159" flag="0" />
+<vel value="0.0359" flag="0" />
+<psa03 value="0.0650" flag="T" />
+<psa10 value="0.0458" flag="0" />
+<psa30 value="0.0166" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0143" flag="0" />
+<vel value="0.0360" flag="0" />
+<psa03 value="0.0416" flag="T" />
+<psa10 value="0.0406" flag="0" />
+<psa30 value="0.0151" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0073" flag="0" />
+<vel value="0.0288" flag="0" />
+<psa03 value="0.0269" flag="T" />
+<psa10 value="0.0204" flag="0" />
+<psa30 value="0.0054" flag="0" />
+</comp>
+</station>
+<station code="TKGZ" name="TKGZ" insttype="LE-3DliteMkII" lat="-38.4392" lon="177.849" dist="754.982603" source="" netid="" commtype="" loc="" intensity="3.9">
+<comp name="EHE">
+<acc value="0.0064" flag="T" />
+<vel value="1.3234" flag="T" />
+<psa03 value="0.3504" flag="T" />
+<psa10 value="0.2865" flag="T" />
+<psa30 value="0.2494" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0077" flag="T" />
+<vel value="0.9481" flag="T" />
+<psa03 value="0.2511" flag="T" />
+<psa10 value="0.2052" flag="T" />
+<psa30 value="0.1787" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0033" flag="T" />
+<vel value="0.2366" flag="T" />
+<psa03 value="0.0628" flag="T" />
+<psa10 value="0.0513" flag="T" />
+<psa30 value="0.0447" flag="T" />
+</comp>
+</station>
+<station code="TLZ" name="TLZ" insttype="CMG-3ESP" lat="-38.3294" lon="175.538" dist="636.510953" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="HHE">
+<acc value="0.0055" flag="T" />
+<vel value="0.0164" flag="0" />
+<psa03 value="0.0164" flag="T" />
+<psa10 value="0.0142" flag="0" />
+<psa30 value="0.0099" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0044" flag="T" />
+<vel value="0.0105" flag="0" />
+<psa03 value="0.0076" flag="T" />
+<psa10 value="0.0118" flag="0" />
+<psa30 value="0.0052" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0073" flag="T" />
+<vel value="0.0113" flag="0" />
+<psa03 value="0.0206" flag="T" />
+<psa10 value="0.0169" flag="0" />
+<psa30 value="0.0050" flag="0" />
+</comp>
+</station>
+<station code="TMVZ" name="TMVZ" insttype="CMG-3ESP" lat="-39.1156" lon="175.704" dist="574.201132" source="" netid="" commtype="" loc="" intensity="1.5">
+<comp name="HHE">
+<acc value="0.0158" flag="T" />
+<vel value="0.0409" flag="T" />
+<psa03 value="0.0158" flag="0" />
+<psa10 value="0.0392" flag="0" />
+<psa30 value="0.0170" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0075" flag="T" />
+<vel value="0.0202" flag="T" />
+<psa03 value="0.0112" flag="0" />
+<psa10 value="0.0173" flag="0" />
+<psa30 value="0.0066" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0088" flag="T" />
+<vel value="0.0266" flag="T" />
+<psa03 value="0.0154" flag="0" />
+<psa10 value="0.0349" flag="0" />
+<psa30 value="0.0153" flag="0" />
+</comp>
+</station>
+<station code="TMWZ" name="TMWZ" insttype="L4C-3D" lat="-41.1066" lon="175.89" dist="438.568873" source="" netid="" commtype="" loc="" intensity="2.1">
+<comp name="EHE">
+<acc value="0.0147" flag="0" />
+<vel value="0.0803" flag="T" />
+<psa03 value="0.0625" flag="0" />
+<psa10 value="0.0298" flag="0" />
+<psa30 value="0.0174" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0123" flag="0" />
+<vel value="0.0371" flag="T" />
+<psa03 value="0.0174" flag="0" />
+<psa10 value="0.0326" flag="0" />
+<psa30 value="0.0148" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0063" flag="0" />
+<vel value="0.0174" flag="T" />
+<psa03 value="0.0160" flag="0" />
+<psa10 value="0.0153" flag="0" />
+<psa30 value="0.0106" flag="0" />
+</comp>
+</station>
+<station code="TOZ" name="TOZ" insttype="CMG-3ESPC" lat="-37.731" lon="175.502" dist="691.609185" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="HHE">
+<acc value="0.0030" flag="T" />
+<vel value="0.0094" flag="0" />
+<psa03 value="0.0035" flag="0" />
+<psa10 value="0.0082" flag="0" />
+<psa30 value="0.0038" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0024" flag="T" />
+<vel value="0.0086" flag="0" />
+<psa03 value="0.0025" flag="0" />
+<psa10 value="0.0070" flag="0" />
+<psa30 value="0.0041" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0028" flag="T" />
+<vel value="0.0057" flag="0" />
+<psa03 value="0.0038" flag="0" />
+<psa10 value="0.0086" flag="0" />
+<psa30 value="0.0051" flag="0" />
+</comp>
+</station>
+<station code="TRWZ" name="TRWZ" insttype="L4C-3D" lat="-41.398" lon="175.688" dist="407.832903" source="" netid="" commtype="" loc="" intensity="1.4">
+<comp name="EHE">
+<acc value="0.0068" flag="0" />
+<vel value="0.0302" flag="0" />
+<psa03 value="0.0232" flag="0" />
+<psa10 value="0.0209" flag="0" />
+<psa30 value="0.0239" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0100" flag="0" />
+<vel value="0.0391" flag="0" />
+<psa03 value="0.0192" flag="0" />
+<psa10 value="0.0285" flag="0" />
+<psa30 value="0.0281" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0087" flag="0" />
+<vel value="0.0280" flag="0" />
+<psa03 value="0.0115" flag="0" />
+<psa10 value="0.0132" flag="0" />
+<psa30 value="0.0222" flag="0" />
+</comp>
+</station>
+<station code="TSZ" name="TSZ" insttype="CMG-3ESP" lat="-40.0586" lon="175.961" dist="513.093284" source="" netid="" commtype="" loc="" intensity="1.5">
+<comp name="HHE">
+<acc value="0.0106" flag="T" />
+<vel value="0.0302" flag="0" />
+<psa03 value="0.0139" flag="0" />
+<psa10 value="0.0250" flag="0" />
+<psa30 value="0.0291" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0084" flag="T" />
+<vel value="0.0163" flag="0" />
+<psa03 value="0.0103" flag="0" />
+<psa10 value="0.0243" flag="0" />
+<psa30 value="0.0126" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0139" flag="T" />
+<vel value="0.0421" flag="0" />
+<psa03 value="0.0204" flag="0" />
+<psa10 value="0.0365" flag="0" />
+<psa30 value="0.0170" flag="0" />
+</comp>
+</station>
+<station code="TUVZ" name="TUVZ" insttype="L4C-3D" lat="-39.2677" lon="175.654" dist="558.387707" source="" netid="" commtype="" loc="" intensity="3.1">
+<comp name="EHE">
+<acc value="0.0291" flag="T" />
+<vel value="0.2920" flag="T" />
+<psa03 value="0.0776" flag="T" />
+<psa10 value="0.0719" flag="0" />
+<psa30 value="0.0549" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0282" flag="T" />
+<vel value="0.4476" flag="T" />
+<psa03 value="0.1184" flag="T" />
+<psa10 value="0.0967" flag="0" />
+<psa30 value="0.0838" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0132" flag="T" />
+<vel value="2.1032" flag="T" />
+<psa03 value="0.5565" flag="T" />
+<psa10 value="0.4542" flag="0" />
+<psa30 value="0.3939" flag="T" />
+</comp>
+</station>
+<station code="TUWZ" name="TUWZ" insttype="L4C-3D" lat="-41.4294" lon="173.943" dist="284.772424" source="" netid="" commtype="" loc="" intensity="2.1">
+<comp name="EHE">
+<acc value="0.0324" flag="0" />
+<vel value="0.0600" flag="0" />
+<psa03 value="0.0862" flag="0" />
+<psa10 value="0.0977" flag="0" />
+<psa30 value="0.0366" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0363" flag="0" />
+<vel value="0.0839" flag="0" />
+<psa03 value="0.0781" flag="0" />
+<psa10 value="0.1085" flag="0" />
+<psa30 value="0.0404" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0197" flag="0" />
+<vel value="0.0390" flag="0" />
+<psa03 value="0.0469" flag="0" />
+<psa10 value="0.0400" flag="0" />
+<psa30 value="0.0178" flag="0" />
+</comp>
+</station>
+<station code="TUZ" name="TUZ" insttype="CMG-3ESP" lat="-45.954" lon="169.631" dist="344.865115" source="" netid="" commtype="" loc="" intensity="2.0">
+<comp name="HHE">
+<acc value="0.0330" flag="0" />
+<vel value="0.0712" flag="0" />
+<psa03 value="0.0435" flag="0" />
+<psa10 value="0.1382" flag="0" />
+<psa30 value="0.0328" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0219" flag="0" />
+<vel value="0.0712" flag="0" />
+<psa03 value="0.0415" flag="0" />
+<psa10 value="0.0640" flag="0" />
+<psa30 value="0.0340" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0177" flag="0" />
+<vel value="0.0498" flag="0" />
+<psa03 value="0.0306" flag="0" />
+<psa10 value="0.0463" flag="0" />
+<psa30 value="0.0294" flag="0" />
+</comp>
+</station>
+<station code="TWGZ" name="TWGZ" insttype="LE-3DliteMkII" lat="-38.1767" lon="177.98" dist="783.787012" source="" netid="" commtype="" loc="" intensity="3.9" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0101" flag="T" />
+<vel value="1.4467" flag="T" />
+<psa03 value="0.3810" flag="T" />
+<psa10 value="0.3121" flag="T" />
+<psa30 value="0.2708" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0096" flag="T" />
+<vel value="1.5274" flag="T" />
+<psa03 value="0.4038" flag="T" />
+<psa10 value="0.3303" flag="T" />
+<psa30 value="0.2872" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0037" flag="T" />
+<vel value="0.2373" flag="T" />
+<psa03 value="0.0624" flag="T" />
+<psa10 value="0.0511" flag="T" />
+<psa30 value="0.0443" flag="T" />
+</comp>
+</station>
+<station code="TWVZ" name="TWVZ" insttype="L4C-3D" lat="-39.071" lon="175.438" dist="563.980445" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="EHE">
+<acc value="0.0087" flag="T" />
+<vel value="0.0192" flag="0" />
+<psa03 value="0.0119" flag="0" />
+<psa10 value="0.0233" flag="0" />
+<psa30 value="0.0082" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0101" flag="T" />
+<vel value="0.0170" flag="0" />
+<psa03 value="0.0142" flag="0" />
+<psa10 value="0.0246" flag="0" />
+<psa30 value="0.0071" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0042" flag="T" />
+<vel value="0.0104" flag="0" />
+<psa03 value="0.0064" flag="0" />
+<psa10 value="0.0167" flag="0" />
+<psa30 value="0.0071" flag="0" />
+</comp>
+</station>
+<station code="URZ" name="URZ" insttype="CMG-3TB" lat="-38.2592" lon="177.111" dist="725.670721" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="HH1">
+<acc value="0.0032" flag="T" />
+<vel value="0.0101" flag="0" />
+<psa03 value="0.0042" flag="0" />
+<psa10 value="0.0074" flag="0" />
+<psa30 value="0.0066" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0019" flag="T" />
+<vel value="0.0056" flag="0" />
+<psa03 value="0.0030" flag="0" />
+<psa10 value="0.0053" flag="0" />
+<psa30 value="0.0034" flag="0" />
+</comp>
+<comp name="HH2">
+<acc value="0.0018" flag="T" />
+<vel value="0.0065" flag="0" />
+<psa03 value="0.0046" flag="0" />
+<psa10 value="0.0058" flag="0" />
+<psa30 value="0.0029" flag="0" />
+</comp>
+</station>
+<station code="UTU" name="UTU" insttype="L4C-3D" lat="-38.1766" lon="176.194" dist="683.005801" source="" netid="" commtype="" loc="" intensity="1.9">
+<comp name="EHE">
+<acc value="0.0103" flag="T" />
+<vel value="0.0595" flag="T" />
+<psa03 value="0.0173" flag="T" />
+<psa10 value="0.0371" flag="0" />
+<psa30 value="0.0131" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0114" flag="T" />
+<vel value="0.0288" flag="T" />
+<psa03 value="0.0154" flag="T" />
+<psa10 value="0.0344" flag="0" />
+<psa30 value="0.0176" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0052" flag="T" />
+<vel value="0.0146" flag="T" />
+<psa03 value="0.0092" flag="T" />
+<psa10 value="0.0152" flag="0" />
+<psa30 value="0.0070" flag="0" />
+</comp>
+</station>
+<station code="VRZ" name="VRZ" insttype="CMG-3ESP" lat="-39.1243" lon="174.758" dist="525.526568" source="" netid="" commtype="" loc="" intensity="1.6">
+<comp name="HHE">
+<acc value="0.0204" flag="T" />
+<vel value="0.0380" flag="T" />
+<psa03 value="0.0565" flag="T" />
+<psa10 value="0.0551" flag="0" />
+<psa30 value="0.0189" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0210" flag="T" />
+<vel value="0.0280" flag="T" />
+<psa03 value="0.0313" flag="T" />
+<psa10 value="0.0548" flag="0" />
+<psa30 value="0.0083" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0292" flag="T" />
+<vel value="0.0482" flag="T" />
+<psa03 value="0.0453" flag="T" />
+<psa10 value="0.0900" flag="0" />
+<psa30 value="0.0144" flag="0" />
+</comp>
+</station>
+<station code="WACZ" name="WACZ" insttype="LE-3DliteMkII" lat="-43.9425" lon="171.839" dist="107.488395" source="" netid="" commtype="" loc="" intensity="6.8" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.4054" flag="0" />
+<vel value="18.8750" flag="T" />
+<psa03 value="4.9874" flag="T" />
+<psa10 value="4.0806" flag="0" />
+<psa30 value="3.5476" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.7838" flag="0" />
+<vel value="1.5638" flag="T" />
+<psa03 value="1.1336" flag="T" />
+<psa10 value="1.4185" flag="0" />
+<psa30 value="0.2931" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.2641" flag="0" />
+<vel value="11.1549" flag="T" />
+<psa03 value="2.9491" flag="T" />
+<psa10 value="2.4124" flag="0" />
+<psa30 value="2.0980" flag="T" />
+</comp>
+</station>
+<station code="WAKC" name="WAKC" insttype="FBA-ES-T-BASALT" lat="-42.9631" lon="172.705" dist="117.244362" source="" netid="" commtype="" loc="" intensity="4.2">
+<comp name="HN2">
+<acc value="1.4481" flag="0" />
+<vel value="2.2788" flag="0" />
+<psa03 value="1.7195" flag="0" />
+<psa10 value="3.3158" flag="0" />
+<psa30 value="0.5852" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.7989" flag="0" />
+<vel value="1.4032" flag="0" />
+<psa03 value="0.9781" flag="0" />
+<psa10 value="2.8715" flag="0" />
+<psa30 value="0.1837" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.7828" flag="0" />
+<vel value="1.8916" flag="0" />
+<psa03 value="1.3445" flag="0" />
+<psa10 value="2.4417" flag="0" />
+<psa30 value="0.4109" flag="0" />
+</comp>
+</station>
+<station code="WAZ" name="WAZ" insttype="CMG-3ESP" lat="-39.7546" lon="174.986" dist="480.166696" source="" netid="" commtype="" loc="" intensity="2.1">
+<comp name="HHE">
+<acc value="0.0377" flag="T" />
+<vel value="0.0702" flag="T" />
+<psa03 value="0.0890" flag="T" />
+<psa10 value="0.1117" flag="0" />
+<psa30 value="0.0285" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0214" flag="T" />
+<vel value="0.0447" flag="T" />
+<psa03 value="0.0668" flag="T" />
+<psa10 value="0.0802" flag="0" />
+<psa30 value="0.0206" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0464" flag="T" />
+<vel value="0.0810" flag="T" />
+<psa03 value="0.0975" flag="T" />
+<psa10 value="0.1215" flag="0" />
+<psa30 value="0.0328" flag="0" />
+</comp>
+</station>
+<station code="WBCS" name="WBCS" insttype="FBA-ES-T-DECK" lat="-41.7557" lon="171.6" dist="146.283312" source="" netid="" commtype="" loc="" intensity="4.0">
+<comp name="HN2">
+<acc value="1.4763" flag="0" />
+<vel value="1.7860" flag="0" />
+<psa03 value="2.1056" flag="0" />
+<psa10 value="3.9595" flag="T" />
+<psa30 value="0.3750" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.6210" flag="0" />
+<vel value="0.7314" flag="0" />
+<psa03 value="0.6519" flag="0" />
+<psa10 value="1.1116" flag="T" />
+<psa30 value="0.1395" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="1.1493" flag="0" />
+<vel value="1.3731" flag="0" />
+<psa03 value="1.9478" flag="0" />
+<psa10 value="2.7311" flag="T" />
+<psa30 value="0.3211" flag="0" />
+</comp>
+</station>
+<station code="WCSS" name="WCSS" insttype="CUSP3D" lat="-43.4577" lon="171.863" dist="65.056255" source="" netid="" commtype="" loc="" intensity="4.0">
+<comp name="HN2">
+<acc value="2.0660" flag="0" />
+<vel value="1.8076" flag="0" />
+<psa03 value="4.9276" flag="0" />
+<psa10 value="4.0170" flag="0" />
+<psa30 value="0.1371" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.6011" flag="0" />
+<vel value="0.6798" flag="0" />
+<psa03 value="1.4127" flag="0" />
+<psa10 value="1.3873" flag="0" />
+<psa30 value="0.0942" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="1.0363" flag="0" />
+<vel value="1.0861" flag="0" />
+<psa03 value="3.3409" flag="0" />
+<psa10 value="1.6878" flag="0" />
+<psa30 value="0.1457" flag="0" />
+</comp>
+</station>
+<station code="WDSZ" name="WDSZ" insttype="IESE" lat="-43.2936" lon="170.406" dist="71.748207" source="" netid="" commtype="" loc="" intensity="nan">
+<comp name="EHZ">
+<acc value="1.1975" flag="0" />
+<vel value="0.7317" flag="0" />
+<psa03 value="2.4719" flag="0" />
+<psa10 value="0.4348" flag="0" />
+<psa30 value="0.0599" flag="0" />
+</comp>
+</station>
+<station code="WEL" name="WEL" insttype="CMG-3ESP" lat="-41.284" lon="174.768" dist="349.159929" source="" netid="" commtype="" loc="" intensity="1.7">
+<comp name="HHE">
+<acc value="0.0273" flag="0" />
+<vel value="0.0495" flag="0" />
+<psa03 value="0.0644" flag="0" />
+<psa10 value="0.0760" flag="0" />
+<psa30 value="0.0247" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0183" flag="0" />
+<vel value="0.0429" flag="0" />
+<psa03 value="0.0248" flag="0" />
+<psa10 value="0.0567" flag="0" />
+<psa30 value="0.0215" flag="0" />
+</comp>
+</station>
+<station code="WHAS" name="WHAS" insttype="FBA-ES-T-BASALT" lat="-43.3143" lon="170.327" dist="78.519166" source="" netid="" commtype="" loc="" intensity="3.3">
+<comp name="HN2">
+<acc value="1.7854" flag="0" />
+<vel value="0.5109" flag="0" />
+<psa03 value="1.6392" flag="0" />
+<psa10 value="0.2210" flag="0" />
+<psa30 value="0.0679" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.5753" flag="0" />
+<vel value="0.2514" flag="0" />
+<psa03 value="1.0009" flag="0" />
+<psa10 value="0.1233" flag="0" />
+<psa30 value="0.0423" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="1.5884" flag="0" />
+<vel value="0.5366" flag="0" />
+<psa03 value="1.3554" flag="0" />
+<psa10 value="0.2435" flag="0" />
+<psa30 value="0.0540" flag="0" />
+</comp>
+</station>
+<station code="WHFS" name="WHFS" insttype="FBA-ES-T-BASALT" lat="-43.2612" lon="170.359" dist="74.189803" source="" netid="" commtype="" loc="" intensity="3.5">
+<comp name="HN2">
+<acc value="0.7211" flag="0" />
+<vel value="0.7989" flag="0" />
+<psa03 value="1.8332" flag="0" />
+<psa10 value="0.5587" flag="0" />
+<psa30 value="0.1955" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.4436" flag="0" />
+<vel value="0.4109" flag="0" />
+<psa03 value="0.6669" flag="0" />
+<psa10 value="0.3396" flag="0" />
+<psa30 value="0.0606" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.7740" flag="0" />
+<vel value="0.7036" flag="0" />
+<psa03 value="1.6183" flag="0" />
+<psa10 value="0.4781" flag="0" />
+<psa30 value="0.1747" flag="0" />
+</comp>
+</station>
+<station code="WHHZ" name="WHHZ" insttype="LE-3DliteMkII" lat="-39.0768" lon="177.234" dist="667.331886" source="" netid="" commtype="" loc="" intensity="5.1" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0135" flag="T" />
+<vel value="5.4122" flag="T" />
+<psa03 value="1.4339" flag="T" />
+<psa10 value="1.1721" flag="T" />
+<psa30 value="1.0212" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0182" flag="T" />
+<vel value="5.3077" flag="T" />
+<psa03 value="1.4044" flag="T" />
+<psa10 value="1.1484" flag="T" />
+<psa30 value="0.9995" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0063" flag="T" />
+<vel value="1.6331" flag="T" />
+<psa03 value="0.4320" flag="T" />
+<psa10 value="0.3533" flag="T" />
+<psa30 value="0.3074" flag="T" />
+</comp>
+</station>
+<station code="WHRZ" name="WHRZ" insttype="LE-3DliteMkII" lat="-37.8557" lon="176.975" dist="752.719535" source="" netid="" commtype="" loc="" intensity="6.0" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0087" flag="T" />
+<vel value="10.6919" flag="T" />
+<psa03 value="2.8154" flag="T" />
+<psa10 value="2.3060" flag="T" />
+<psa30 value="1.9995" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0069" flag="T" />
+<vel value="3.1772" flag="T" />
+<psa03 value="0.8266" flag="T" />
+<psa10 value="0.6789" flag="T" />
+<psa30 value="0.5840" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0026" flag="T" />
+<vel value="1.1259" flag="T" />
+<psa03 value="0.2965" flag="T" />
+<psa10 value="0.2427" flag="T" />
+<psa30 value="0.2104" flag="T" />
+</comp>
+</station>
+<station code="WHTZ" name="WHTZ" insttype="L4C-3D" lat="-38.666" lon="175.957" dist="627.032520" source="" netid="" commtype="" loc="" intensity="2.1">
+<comp name="EHE">
+<acc value="0.0142" flag="T" />
+<vel value="0.0801" flag="T" />
+<psa03 value="0.0227" flag="T" />
+<psa10 value="0.0523" flag="0" />
+<psa30 value="0.0189" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0253" flag="T" />
+<vel value="0.0684" flag="T" />
+<psa03 value="0.0276" flag="T" />
+<psa10 value="0.0519" flag="0" />
+<psa30 value="0.0330" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0080" flag="T" />
+<vel value="0.0265" flag="T" />
+<psa03 value="0.0095" flag="T" />
+<psa10 value="0.0215" flag="0" />
+<psa30 value="0.0227" flag="T" />
+</comp>
+</station>
+<station code="WHVZ" name="WHVZ" insttype="CMG-3ESPC" lat="-39.2825" lon="175.589" dist="553.553666" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="HHE">
+<acc value="0.0106" flag="T" />
+<vel value="0.0171" flag="0" />
+<psa03 value="0.0141" flag="0" />
+<psa10 value="0.0262" flag="0" />
+<psa30 value="0.0084" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0076" flag="T" />
+<vel value="0.0198" flag="0" />
+<psa03 value="0.0142" flag="0" />
+<psa10 value="0.0214" flag="0" />
+<psa30 value="0.0079" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0098" flag="T" />
+<vel value="0.0231" flag="0" />
+<psa03 value="0.0149" flag="0" />
+<psa10 value="0.0306" flag="0" />
+<psa30 value="0.0096" flag="0" />
+</comp>
+</station>
+<station code="WIAZ" name="WIAZ" insttype="LE-3DliteMkII" lat="-36.793" lon="175.134" dist="769.791075" source="" netid="" commtype="" loc="" intensity="3.3">
+<comp name="EHE">
+<acc value="0.0024" flag="T" />
+<vel value="0.1830" flag="T" />
+<psa03 value="0.0485" flag="T" />
+<psa10 value="0.0396" flag="T" />
+<psa30 value="0.0345" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0020" flag="T" />
+<vel value="0.5277" flag="T" />
+<psa03 value="0.1395" flag="T" />
+<psa10 value="0.1141" flag="T" />
+<psa30 value="0.0992" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0022" flag="T" />
+<vel value="0.7771" flag="T" />
+<psa03 value="0.2054" flag="T" />
+<psa10 value="0.1681" flag="T" />
+<psa30 value="0.1462" flag="T" />
+</comp>
+</station>
+<station code="WIGC" name="WIGC" insttype="CUSP3C" lat="-42.7012" lon="172.8" dist="130.886594" source="" netid="" commtype="" loc="" intensity="3.6">
+<comp name="HN2">
+<acc value="0.3766" flag="0" />
+<vel value="0.6063" flag="0" />
+<psa03 value="0.8379" flag="0" />
+<psa10 value="0.6378" flag="0" />
+<psa30 value="0.1204" flag="0" />
+</comp>
+<comp name="HNZ">
+<acc value="0.1779" flag="0" />
+<vel value="0.2866" flag="0" />
+<psa03 value="0.4580" flag="0" />
+<psa10 value="0.6556" flag="0" />
+<psa30 value="0.0789" flag="0" />
+</comp>
+<comp name="HN1">
+<acc value="0.6791" flag="0" />
+<vel value="0.9017" flag="0" />
+<psa03 value="1.3680" flag="0" />
+<psa10 value="1.1823" flag="0" />
+<psa30 value="0.2152" flag="0" />
+</comp>
+</station>
+<station code="WIZ" name="WIZ" insttype="CMG-3ESP" lat="-37.5265" lon="177.189" dist="793.193791" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="HHE">
+<acc value="0.0015" flag="T" />
+<vel value="0.0045" flag="0" />
+<psa03 value="0.0054" flag="T" />
+<psa10 value="0.0016" flag="0" />
+<psa30 value="0.0034" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0011" flag="T" />
+<vel value="0.0030" flag="0" />
+<psa03 value="0.0028" flag="T" />
+<psa10 value="0.0018" flag="0" />
+<psa30 value="0.0019" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0022" flag="T" />
+<vel value="0.0061" flag="0" />
+<psa03 value="0.0051" flag="T" />
+<psa10 value="0.0029" flag="0" />
+<psa30 value="0.0059" flag="0" />
+</comp>
+</station>
+<station code="WKZ" name="WKZ" insttype="CMG-3ESP" lat="-44.827" lon="169.018" dist="263.986272" source="" netid="" commtype="" loc="" intensity="2.6">
+<comp name="HHE">
+<acc value="0.0794" flag="0" />
+<vel value="0.1867" flag="0" />
+<psa03 value="0.1079" flag="0" />
+<psa10 value="0.1756" flag="0" />
+<psa30 value="0.0771" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0610" flag="0" />
+<vel value="0.1113" flag="0" />
+<psa03 value="0.1020" flag="0" />
+<psa10 value="0.1876" flag="0" />
+<psa30 value="0.0449" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0602" flag="0" />
+<vel value="0.1907" flag="0" />
+<psa03 value="0.0836" flag="0" />
+<psa10 value="0.1497" flag="0" />
+<psa30 value="0.0837" flag="0" />
+</comp>
+</station>
+<station code="WMSZ" name="WMSZ" insttype="IESE" lat="-43.2838" lon="170.394" dist="72.287100" source="" netid="" commtype="" loc="" intensity="nan">
+<comp name="EHZ">
+<acc value="0.3370" flag="0" />
+<vel value="0.1747" flag="0" />
+<psa03 value="0.7384" flag="0" />
+<psa10 value="0.1371" flag="0" />
+<psa30 value="0.0254" flag="0" />
+</comp>
+</station>
+<station code="WNPS" name="WNPS" insttype="CUSP3D" lat="-44.6946" lon="169.143" dist="246.505196" source="" netid="" commtype="" loc="" intensity="3.3">
+<comp name="HN2">
+<acc value="0.2093" flag="0" />
+<vel value="0.5255" flag="0" />
+<psa03 value="0.2530" flag="0" />
+<psa10 value="0.8813" flag="0" />
+<psa30 value="0.2610" flag="T" />
+</comp>
+<comp name="HNZ">
+<acc value="0.1409" flag="0" />
+<vel value="0.2978" flag="0" />
+<psa03 value="0.3076" flag="0" />
+<psa10 value="0.4450" flag="0" />
+<psa30 value="0.0752" flag="T" />
+</comp>
+<comp name="HN1">
+<acc value="0.2019" flag="0" />
+<vel value="0.4154" flag="0" />
+<psa03 value="0.2912" flag="0" />
+<psa10 value="0.9399" flag="0" />
+<psa30 value="0.1727" flag="T" />
+</comp>
+</station>
+<station code="WNVZ" name="WNVZ" insttype="2" lat="-39.327" lon="175.598" dist="550.236113" source="" netid="" commtype="" loc="" intensity="2.4">
+<comp name="EH1">
+<acc value="0.0233" flag="T" />
+<vel value="0.1337" flag="T" />
+<psa03 value="0.0351" flag="T" />
+<psa10 value="0.0670" flag="0" />
+<psa30 value="0.0278" flag="0" />
+</comp>
+<comp name="EH2">
+<acc value="0.0224" flag="T" />
+<vel value="0.1159" flag="T" />
+<psa03 value="0.0304" flag="T" />
+<psa10 value="0.0605" flag="0" />
+<psa30 value="0.0222" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0100" flag="T" />
+<vel value="0.0637" flag="T" />
+<psa03 value="0.0197" flag="T" />
+<psa10 value="0.0264" flag="0" />
+<psa30 value="0.0118" flag="0" />
+</comp>
+</station>
+<station code="WPHZ" name="WPHZ" insttype="LE-3DliteMkII" lat="-40.0643" lon="176.441" dist="543.686353" source="" netid="" commtype="" loc="" intensity="4.7" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0285" flag="T" />
+<vel value="4.0335" flag="T" />
+<psa03 value="1.0650" flag="T" />
+<psa10 value="0.8716" flag="T" />
+<psa30 value="0.7574" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0205" flag="T" />
+<vel value="0.5984" flag="T" />
+<psa03 value="0.1578" flag="T" />
+<psa10 value="0.1292" flag="T" />
+<psa30 value="0.1121" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0141" flag="T" />
+<vel value="3.8352" flag="T" />
+<psa03 value="1.0139" flag="T" />
+<psa10 value="0.8294" flag="T" />
+<psa30 value="0.7214" flag="T" />
+</comp>
+</station>
+<station code="WPRZ" name="WPRZ" insttype="LE-3DliteMkII" lat="-38.5196" lon="176.162" dist="650.804427" source="" netid="" commtype="" loc="" intensity="4.5" intensity_flag="T">
+<comp name="EHE">
+<acc value="0.0069" flag="T" />
+<vel value="3.5122" flag="T" />
+<psa03 value="0.9231" flag="T" />
+<psa10 value="0.7565" flag="T" />
+<psa30 value="0.6553" flag="T" />
+</comp>
+<comp name="EHN">
+<acc value="0.0112" flag="T" />
+<vel value="0.6199" flag="T" />
+<psa03 value="0.1618" flag="T" />
+<psa10 value="0.1328" flag="T" />
+<psa30 value="0.1145" flag="T" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0038" flag="T" />
+<vel value="0.9977" flag="T" />
+<psa03 value="0.2607" flag="T" />
+<psa10 value="0.2140" flag="T" />
+<psa30 value="0.1847" flag="T" />
+</comp>
+</station>
+<station code="WPSZ" name="WPSZ" insttype="IESE" lat="-43.2842" lon="170.412" dist="70.934983" source="" netid="" commtype="" loc="" intensity="nan">
+<comp name="EHZ">
+<acc value="0.3637" flag="0" />
+<vel value="0.2910" flag="0" />
+<psa03 value="1.1026" flag="0" />
+<psa10 value="0.2448" flag="0" />
+<psa30 value="0.0403" flag="0" />
+</comp>
+</station>
+<station code="WSRZ" name="WSRZ" insttype="CMG-3ESPC" lat="-37.5181" lon="177.178" dist="793.347237" source="" netid="" commtype="" loc="" intensity="1.0">
+<comp name="HHE">
+<acc value="0.0075" flag="T" />
+<vel value="0.0072" flag="T" />
+<psa03 value="0.0261" flag="T" />
+<psa10 value="0.0031" flag="0" />
+<psa30 value="0.0033" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.0036" flag="T" />
+<vel value="0.0042" flag="T" />
+<psa03 value="0.0066" flag="T" />
+<psa10 value="0.0031" flag="0" />
+<psa30 value="0.0020" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="0.0087" flag="T" />
+<vel value="0.0071" flag="T" />
+<psa03 value="0.0259" flag="T" />
+<psa10 value="0.0029" flag="0" />
+<psa30 value="0.0058" flag="0" />
+</comp>
+</station>
+<station code="WTAZ" name="WTAZ" insttype="L4C" lat="-36.9324" lon="174.573" dist="736.112410" source="" netid="" commtype="" loc="" intensity="nan">
+<comp name="EHZ">
+<acc value="0.0058" flag="0" />
+<vel value="0.0273" flag="0" />
+<psa03 value="0.0101" flag="0" />
+<psa10 value="0.0133" flag="0" />
+<psa30 value="0.0051" flag="0" />
+</comp>
+</station>
+<station code="WTSZ" name="WTSZ" insttype="IESE" lat="-43.302" lon="170.412" dist="71.628364" source="" netid="" commtype="" loc="" intensity="nan">
+<comp name="EHZ">
+<acc value="0.6408" flag="0" />
+<vel value="0.3958" flag="0" />
+<psa03 value="1.3813" flag="0" />
+<psa10 value="0.6323" flag="0" />
+<psa30 value="0.0506" flag="0" />
+</comp>
+</station>
+<station code="WTVZ" name="WTVZ" insttype="L4C-3D" lat="-39.1153" lon="175.59" dist="568.089555" source="" netid="" commtype="" loc="" intensity="1.9">
+<comp name="EHE">
+<acc value="0.0171" flag="T" />
+<vel value="0.0605" flag="T" />
+<psa03 value="0.0348" flag="T" />
+<psa10 value="0.0725" flag="0" />
+<psa30 value="0.0153" flag="0" />
+</comp>
+<comp name="EHN">
+<acc value="0.0241" flag="T" />
+<vel value="0.0659" flag="T" />
+<psa03 value="0.0351" flag="T" />
+<psa10 value="0.1050" flag="0" />
+<psa30 value="0.0210" flag="0" />
+</comp>
+<comp name="EHZ">
+<acc value="0.0105" flag="T" />
+<vel value="0.0215" flag="T" />
+<psa03 value="0.0210" flag="T" />
+<psa10 value="0.0305" flag="0" />
+<psa30 value="0.0064" flag="0" />
+</comp>
+</station>
+<station code="WVZ" name="WVZ" insttype="CMG-3ESP" lat="-43.0744" lon="170.737" dist="40.490696" source="" netid="" commtype="" loc="" intensity="3.6">
+<comp name="HHE">
+<acc value="1.3324" flag="0" />
+<vel value="0.6585" flag="0" />
+<psa03 value="1.6619" flag="0" />
+<psa10 value="0.3808" flag="0" />
+<psa30 value="0.1184" flag="0" />
+</comp>
+<comp name="HHZ">
+<acc value="0.8519" flag="0" />
+<vel value="0.5436" flag="0" />
+<psa03 value="1.2079" flag="0" />
+<psa10 value="0.4309" flag="0" />
+<psa30 value="0.0676" flag="0" />
+</comp>
+<comp name="HHN">
+<acc value="4.2358" flag="0" />
+<vel value="0.8590" flag="0" />
+<psa03 value="2.5163" flag="0" />
+<psa10 value="1.0101" flag="0" />
+<psa30 value="0.2770" flag="0" />
+</comp>
+</station>
+
+</stationlist>
+</shakemap-data>
